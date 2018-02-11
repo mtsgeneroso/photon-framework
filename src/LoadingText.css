@@ -1,0 +1,62 @@
+
+/* Firefox Colors SCSS Variables v1.3.0 */
+@-webkit-keyframes placeHolderShimmer {
+  0% {
+    opacity: 0.5;
+  }
+  25% {
+    opacity: 0.25;
+  }
+  50% {
+    opacity: 0.75;
+  }
+  75% {
+    opacity: 0.25;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+@keyframes placeHolderShimmer {
+  0% {
+    opacity: 0.5;
+  }
+  25% {
+    opacity: 0.25;
+  }
+  50% {
+    opacity: 0.75;
+  }
+  75% {
+    opacity: 0.25;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+
+.LoadingText {
+  -webkit-animation: placeHolderShimmer 3s infinite cubic-bezier(0.65, 0.05, 0.36, 1);
+          animation: placeHolderShimmer 3s infinite cubic-bezier(0.65, 0.05, 0.36, 1);
+  background: #d7d7db;
+  display: inline-block;
+  height: 1rem;
+  line-height: 1;
+  margin: 0;
+  vertical-align: middle;
+}
+
+.LoadingText--delay-1 {
+  -webkit-animation: placeHolderShimmer 1.5s infinite cubic-bezier(0.65, 0.05, 0.36, 1);
+          animation: placeHolderShimmer 1.5s infinite cubic-bezier(0.65, 0.05, 0.36, 1);
+}
+
+.LoadingText--delay-2 {
+  -webkit-animation: placeHolderShimmer 3s infinite cubic-bezier(0.65, 0.05, 0.36, 1);
+          animation: placeHolderShimmer 3s infinite cubic-bezier(0.65, 0.05, 0.36, 1);
+}
+
+.LoadingText--delay-3 {
+  -webkit-animation: placeHolderShimmer 4.5s infinite cubic-bezier(0.65, 0.05, 0.36, 1);
+          animation: placeHolderShimmer 4.5s infinite cubic-bezier(0.65, 0.05, 0.36, 1);
+}

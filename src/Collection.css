@@ -1,0 +1,57 @@
+
+/* Firefox Colors SCSS Variables v1.3.0 */
+/* Font mixins. Changes here affect *all* apps */
+/* Shared mixins. Bear in mind changes here impact *all* apps. */
+/* Firefox Colors SCSS Variables v1.3.0 */
+/* Firefox Colors SCSS Variables v1.3.0 */
+.Collection {
+  padding: 10px;
+}
+
+@media (min-width: 720px) {
+  .Collection {
+    padding: 24px;
+  }
+}
+
+@media (min-width: 720px) {
+  .Collection .MetadataCard {
+    margin-top: 12px;
+  }
+}
+
+.Collection-title {
+  font-family: "Fira Sans", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+}
+
+.Collection-description {
+  font-size: 12px;
+}
+
+.Collection-author-name-value {
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@media (min-width: 720px) {
+  .Collection-wrapper {
+    display: grid;
+    grid-auto-flow: column dense;
+    grid-gap: 0 24px;
+    grid-template-columns: minmax(300px, 35%) 1fr;
+    margin: 10px 0 0;
+  }
+  .Collection-wrapper .Collection-detail {
+    grid-column: 1;
+  }
+  .Collection-wrapper .Collection-items {
+    grid-column: 2;
+  }
+  .Collection-wrapper .Collection-items .CardList {
+    margin-top: 0;
+  }
+}

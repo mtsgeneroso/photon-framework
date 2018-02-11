@@ -1,0 +1,117 @@
+/* Card */
+.Card-header {
+  background: #fff;
+  overflow: hidden;
+  padding: 10px 20px;
+  text-align: left;
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
+  font-size: 14px;
+  margin-bottom: 1px;
+  margin-top: 0;
+  word-wrap: break-word;
+}
+
+@media (min-width: 720px) {
+  .Card-header {
+    padding: 15px 36px;
+  }
+}
+
+[dir=rtl] .Card-header {
+  text-align: right;
+}
+
+.Card-contents {
+  background: #fff;
+  overflow: hidden;
+  padding: 10px 20px;
+  font-size: 12px;
+  margin: 0;
+}
+
+@media (min-width: 720px) {
+  .Card-contents {
+    padding: 15px 36px;
+  }
+}
+
+.Card--no-header .Card-contents {
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
+}
+
+.Card--no-footer .Card-contents {
+  border-bottom-left-radius: 9px;
+  border-bottom-right-radius: 9px;
+}
+
+.Card--photon .Card-contents {
+  padding: 20px 15px;
+}
+
+@media (min-width: 720px) {
+  .Card-contents,
+  .Card--photon .Card-contents {
+    padding: 24px 36px;
+  }
+}
+
+.Card-footer-link,
+.Card-footer-text {
+  background: #fff;
+  overflow: hidden;
+  padding: 10px 20px;
+  border-bottom-left-radius: 9px;
+  border-bottom-right-radius: 9px;
+  margin-top: 1px;
+  overflow: inherit;
+  padding: 0;
+  text-align: center;
+}
+
+@media (min-width: 720px) {
+  .Card-footer-link,
+  .Card-footer-text {
+    padding: 15px 36px;
+  }
+}
+
+.Card-footer-link a,
+.Card-footer-link a:active,
+.Card-footer-link a:hover,
+.Card-footer-link a:link,
+.Card-footer-link a:visited,
+.Card-footer-text a,
+.Card-footer-text a:active,
+.Card-footer-text a:hover,
+.Card-footer-text a:link,
+.Card-footer-text a:visited {
+  color: #0d96ff;
+  display: block;
+  font-weight: normal;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.Card-footer-link a:focus,
+.Card-footer-text a:focus {
+  outline: 1px dotted #0d96ff;
+  outline: auto 5px -webkit-focus-ring-color;
+}
+
+.Card-footer-text {
+  padding: 10px;
+}
+
+@media (min-width: 720px) {
+  .Card-footer-text {
+    padding: 15px;
+  }
+}
+
+@media (min-width: 720px) {
+  .Card-footer-link {
+    padding: 5px 26px;
+  }
+}

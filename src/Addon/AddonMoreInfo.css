@@ -1,0 +1,32 @@
+
+/* Firefox Colors SCSS Variables v1.3.0 */
+/* Font mixins. Changes here affect *all* apps */
+/* Shared mixins. Bear in mind changes here impact *all* apps. */
+/* Firefox Colors SCSS Variables v1.3.0 */
+.AddonMoreInfo-contents {
+  margin: 0;
+  padding: 0;
+}
+
+.AddonMoreInfo-contents dt {
+  font-family: "Fira Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  color: #737373;
+  margin: 0;
+  padding: 0;
+}
+
+.AddonMoreInfo-contents dd {
+  font-family: "Fira Sans", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  margin: 0 0 12px;
+  padding: 0;
+}
+
+.AddonMoreInfo-links-contents-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}

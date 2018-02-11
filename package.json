@@ -1,0 +1,25 @@
+{
+  "name": "photon-framework",
+  "version": "0.0.1",
+  "description": "(Non-Official) Photon Framework",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mtsgeneroso/photon-framework.git"
+  },
+  "keywords": [
+    "css-framework",
+    "photon",
+    "mozilla",
+    "photonux"
+  ],
+  "author": "Mateus Generoso (@mtsgeneroso)",
+  "license": "MPL-2.0",
+  "bugs": {
+    "url": "https://github.com/mtsgeneroso/photon-framework/issues"
+  },
+  "homepage": "https://github.com/mtsgeneroso/photon-framework#readme"
+}

@@ -1,0 +1,113 @@
+
+/* Firefox Colors SCSS Variables v1.3.0 */
+/* Font mixins. Changes here affect *all* apps */
+/* Shared mixins. Bear in mind changes here impact *all* apps. */
+/* Firefox Colors SCSS Variables v1.3.0 */
+@media (min-width: 720px) {
+  .AddonsCard--horizontal {
+    position: relative;
+  }
+  .AddonsCard--horizontal .Card-contents {
+    background: #fff;
+    border-bottom-left-radius: 9px;
+    border-bottom-right-radius: 9px;
+    padding: 12px 6px;
+  }
+  .AddonsCard--horizontal .Card-footer,
+  .AddonsCard--horizontal .Card-footer-link {
+    left: auto;
+    right: 0;
+    text-align: right;
+    background: none;
+    border: 0;
+    position: absolute;
+    top: 0;
+  }
+  [dir=rtl] .AddonsCard--horizontal .Card-footer, [dir=rtl]
+  .AddonsCard--horizontal .Card-footer-link {
+    left: 0;
+    right: auto;
+  }
+  [dir=rtl] .AddonsCard--horizontal .Card-footer, [dir=rtl]
+  .AddonsCard--horizontal .Card-footer-link {
+    text-align: left;
+  }
+  .AddonsCard--horizontal ul.AddonsCard-list {
+    display: grid;
+    grid-auto-flow: column dense;
+    grid-template-columns: repeat(4, 25%);
+  }
+  .AddonsCard--horizontal ul.AddonsCard-list .SearchResult {
+    grid-column: auto;
+    margin: 0 6px 1px;
+    min-width: 0;
+    padding: 0;
+  }
+  .AddonsCard--horizontal ul.AddonsCard-list .SearchResult-link {
+    display: inline-block;
+    height: 100%;
+    padding: 12px 24px;
+    -webkit-transition: background-color 150ms ease-in-out;
+    transition: background-color 150ms ease-in-out;
+    width: 100%;
+  }
+  .AddonsCard--horizontal ul.AddonsCard-list .SearchResult-result {
+    display: grid;
+    grid-column-gap: 8px;
+    grid-template-columns: 32px auto;
+  }
+  .AddonsCard--horizontal ul.AddonsCard-list .SearchResult-icon-wrapper {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+  }
+  .AddonsCard--horizontal ul.AddonsCard-list .SearchResult-contents {
+    grid-column: 2 / 2;
+    grid-row: 1 / 2;
+    margin: 0;
+    min-width: 0;
+    width: auto;
+  }
+  .AddonsCard--horizontal ul.AddonsCard-list .SearchResult-metadata,
+  .AddonsCard--horizontal ul.AddonsCard-list .SearchResult-metadata .SearchResult-author,
+  .AddonsCard--horizontal ul.AddonsCard-list .SearchResult-summary {
+    display: none;
+  }
+  .AddonsCard--horizontal ul.AddonsCard-list .SearchResult-users {
+    grid-column: 2 / 2;
+    grid-row: 2 / 2;
+  }
+  [dir=ltr] .AddonsCard--horizontal ul.AddonsCard-list .SearchResult-users {
+    margin-left: -3.5px;
+  }
+  [dir=rtl] .AddonsCard--horizontal ul.AddonsCard-list .SearchResult-users {
+    margin-right: -3.5px;
+  }
+  .AddonsCard--horizontal ul.AddonsCard-list .SearchResult-users,
+  .AddonsCard--horizontal ul.AddonsCard-list .SearchResult-metadata {
+    height: 24px;
+  }
+  .AddonsCard--horizontal ul.AddonsCard-list .SearchResult--theme .SearchResult-result {
+    display: block;
+  }
+  .AddonsCard--horizontal ul.AddonsCard-list .SearchResult--theme .SearchResult-icon-wrapper {
+    border-radius: 9px;
+    margin: 0 0 5px;
+    width: 100%;
+  }
+  .AddonsCard--horizontal ul.AddonsCard-list .SearchResult-link:focus,
+  .AddonsCard--horizontal ul.AddonsCard-list .SearchResult-link:hover {
+    background-color: #f9f9fa;
+    border-radius: 9px;
+  }
+  .AddonsCard--horizontal ul.AddonsCard-list .SearchResult-link:focus .SearchResult-users,
+  .AddonsCard--horizontal ul.AddonsCard-list .SearchResult-link:hover .SearchResult-users {
+    display: none;
+  }
+  .AddonsCard--horizontal ul.AddonsCard-list .SearchResult-link:focus .SearchResult-metadata,
+  .AddonsCard--horizontal ul.AddonsCard-list .SearchResult-link:hover .SearchResult-metadata {
+    display: block;
+  }
+}
+.ErrorPage {
+  margin: 20px 10px;
+}

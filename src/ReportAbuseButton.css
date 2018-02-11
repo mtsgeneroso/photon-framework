@@ -1,0 +1,63 @@
+
+/* Firefox Colors SCSS Variables v1.3.0 */
+.ReportAbuseButton {
+  margin: 12px auto 0;
+}
+
+.ReportAbuseButton-header {
+  margin-bottom: 0;
+}
+
+.ReportAbuseButton-first-paragraph {
+  margin-top: 6px;
+}
+
+.ReportAbuseButton--preview {
+  display: inline-block;
+  width: 100%;
+}
+
+.ReportAbuseButton--is-expanded .ReportAbuseButton--preview {
+  display: none;
+}
+
+.ReportAbuseButton--expanded {
+  display: none;
+}
+
+.ReportAbuseButton--is-expanded .ReportAbuseButton--expanded {
+  display: block;
+}
+
+.ReportAbuseButton-show-more {
+  width: 100%;
+}
+
+.ReportAbuseButton-textarea {
+  font-size: 14px;
+  line-height: 1.4;
+  margin: 5px auto;
+  min-height: 51px;
+  padding: 5px;
+  resize: none;
+  width: 100%;
+}
+
+.ReportAbuseButton-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.ReportAbuseButton-dismiss-report {
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+.ReportAbuseButton-dismiss-report--disabled:link {
+  color: #adb5bd;
+  cursor: not-allowed;
+}

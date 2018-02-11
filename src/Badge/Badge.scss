@@ -1,0 +1,32 @@
+/* Badge 
+HTML (Pug)
+
+div(dir='ltr')
+  span.Badge Badge
+  
+*/
+
+.Badge {
+  color: #0c0c0d;
+  font-size: 14px;
+  line-height: 1.2;
+  margin: 0 0 6px;
+}
+
+@media (min-width: 500px) {
+  .Badge {
+    margin: 0 0 12px;
+  }
+}
+
+.Badge .Icon {
+  vertical-align: top;
+}
+
+[dir=ltr] .Badge .Icon {
+  margin-left: 6px;
+}
+
+[dir=rtl] .Badge .Icon {
+  margin-right: 6px;
+}

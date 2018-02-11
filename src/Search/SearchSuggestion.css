@@ -1,0 +1,56 @@
+
+/* Firefox Colors SCSS Variables v1.3.0 */
+/* Font mixins. Changes here affect *all* apps */
+/* Shared mixins. Bear in mind changes here impact *all* apps. */
+.SearchSuggestion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
+.SearchSuggestion-name {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.SearchSuggestion-icon {
+  height: 16px;
+  overflow: hidden;
+  width: 16px;
+}
+
+[dir=ltr] .SearchSuggestion-icon {
+  margin-right: 12px;
+}
+
+[dir=rtl] .SearchSuggestion-icon {
+  margin-left: 12px;
+}
+
+.SearchSuggestion-icon-arrow {
+  display: none;
+  height: 16px;
+  margin-top: 1px;
+  width: 16px;
+}
+
+[dir=ltr] .SearchSuggestion-icon-arrow {
+  margin-right: 2px;
+}
+
+[dir=rtl] .SearchSuggestion-icon-arrow {
+  margin-left: 2px;
+}

@@ -1,0 +1,23 @@
+/* Firefox Colors SCSS Variables v1.3.0 */
+/* Font mixins. Changes here affect *all* apps */
+/* Shared mixins. Bear in mind changes here impact *all* apps. */
+.InstallButton .InstallButton-button {
+  white-space: nowrap;
+}
+
+.InstallButton .InstallButton-button.InstallButton-button--disabled {
+  cursor: not-allowed;
+  opacity: 0.4;
+}
+
+.InstallButton .InstallButton-button .Icon {
+  margin-top: -2px;
+}
+
+.InstallButton.InstallButton--use-button .InstallButton-switch {
+  display: none;
+}
+
+.InstallButton.InstallButton--use-switch .InstallButton-button {
+  display: none;
+}

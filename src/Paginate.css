@@ -1,0 +1,28 @@
+
+/* Firefox Colors SCSS Variables v1.3.0 */
+/* Font mixins. Changes here affect *all* apps */
+/* Shared mixins. Bear in mind changes here impact *all* apps. */
+/* Firefox Colors SCSS Variables v1.3.0 */
+.Paginate-page-number {
+  font-weight: bold;
+  margin: 0 0 5px;
+  text-align: center;
+}
+
+.Paginate-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.Paginate {
+  margin-bottom: 30px;
+  padding: 0 30px;
+}
+
+.Paginate .Paginate-item {
+  min-width: 48%;
+}

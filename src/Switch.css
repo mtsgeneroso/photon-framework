@@ -1,0 +1,1225 @@
+/* Firefox Colors SCSS Variables v1.3.0 */
+/* Firefox Colors SCSS Variables v1.3.0 */
+/* Font mixins. Changes here affect *all* apps */
+/* Shared mixins. Bear in mind changes here impact *all* apps. */
+@-webkit-keyframes stripes {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 26px 13px;
+  }
+}
+@keyframes stripes {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 26px 13px;
+  }
+}
+
+.Switch {
+  display: inline-block;
+  position: relative;
+}
+
+.Switch input:focus + label {
+  -webkit-box-shadow: inset 0 0 2px 0 #0a84ff, 0 0 3px 0 rgba(10, 132, 255, 0.7);
+          box-shadow: inset 0 0 2px 0 #0a84ff, 0 0 3px 0 rgba(10, 132, 255, 0.7);
+  outline: none;
+}
+
+.Switch input + label {
+  background: #b1b1b1;
+  border: 1px solid #858585;
+  border-radius: 26px;
+  cursor: pointer;
+  display: block;
+  height: 30px;
+  overflow: hidden;
+  position: relative;
+  -webkit-transition: border-color 0.1s;
+  transition: border-color 0.1s;
+  width: 70px;
+}
+
+.Switch input + label::before, .Switch input + label::after {
+  content: "";
+  display: block;
+  position: absolute;
+}
+
+.Switch input + label::before {
+  border-radius: 26px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+}
+
+.Switch input + label::after {
+  background: #fff;
+  border-radius: 50%;
+  bottom: 1px;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+  height: 26px;
+  top: 1px;
+  -webkit-transform: translateX(1px);
+          transform: translateX(1px);
+  -webkit-transition: -webkit-transform 0.3s, -webkit-box-shadow 0.3s;
+  transition: -webkit-transform 0.3s, -webkit-box-shadow 0.3s;
+  transition: transform 0.3s, box-shadow 0.3s;
+  transition: transform 0.3s, box-shadow 0.3s, -webkit-transform 0.3s, -webkit-box-shadow 0.3s;
+  width: 26px;
+  z-index: 3;
+}
+
+[dir=rtl] .Switch input + label::after {
+  -webkit-transform: translateX(-1px);
+          transform: translateX(-1px);
+}
+
+.Switch input + label:hover::after {
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25), 0 0 0 13px rgba(255, 255, 255, 0.2);
+          box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25), 0 0 0 13px rgba(255, 255, 255, 0.2);
+}
+
+.Switch input:disabled + label,
+.Switch input:checked:disabled + label {
+  cursor: not-allowed;
+}
+
+.Switch input:disabled + label::after,
+.Switch input:checked:disabled + label::after {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.Switch input:disabled + label:hover::after,
+.Switch input:checked:disabled + label:hover::after {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.Switch input:checked + label {
+  border-color: #00a920;
+}
+
+.Switch input:checked + label::before {
+  background: #57bd35;
+}
+
+.Switch input:checked + label::after {
+  -webkit-transform: translateX(41px);
+          transform: translateX(41px);
+}
+
+[dir=rtl] .Switch input:checked + label::after {
+  -webkit-transform: translateX(-41px);
+          transform: translateX(-41px);
+}
+
+.Switch.Switch--success input + label::before {
+  background: #57bd35 url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 32 32'%3E %3Cpath fill='%23fff' d='M30.057 9.752L15.9 23.91l-4.044 4.044L7.81 23.91 1.744 17.84l4.045-4.045 6.068 6.067L26.012 5.707z'/%3E %3C/svg%3E") no-repeat 35% 50%;
+}
+
+[dir=rtl] .Switch.Switch--success input + label::before {
+  background-position: 65% 50%;
+}
+
+.Switch--indefinite-reverse input + label::before {
+  -webkit-animation: stripes 0.5s linear infinite;
+          animation: stripes 0.5s linear infinite;
+  background-color: #b1b1b1;
+  background-image: repeating-linear-gradient(45deg, #b1b1b1, #b1b1b1 25%, #d4d4d4 25%, #d4d4d4 50%, #b1b1b1 50%);
+  background-size: 13px 13px;
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+}
+
+.Switch--indefinite-reverse input + label::after {
+  -webkit-transform: translateX(1px);
+          transform: translateX(1px);
+}
+
+[dir=rtl] .Switch--indefinite-reverse input + label::after {
+  -webkit-transform: translateX(-1px);
+          transform: translateX(-1px);
+}
+
+.Switch--indefinite-reverse input + label:hover::after {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.Switch--progress {
+  overflow: hidden;
+  position: relative;
+}
+
+.Switch--progress input + label {
+  border: 1px solid #858585;
+  overflow: hidden;
+}
+
+.Switch--progress input + label::after {
+  background: #fff;
+  -webkit-transform: translateX(41px);
+          transform: translateX(41px);
+}
+
+[dir=rtl] .Switch--progress input + label::after {
+  -webkit-transform: translateX(-41px);
+          transform: translateX(-41px);
+}
+
+.Switch--indefinite input:checked + label {
+  border-color: #00a920;
+}
+
+.Switch--indefinite input:checked + label::before {
+  -webkit-animation: stripes 0.5s linear infinite;
+          animation: stripes 0.5s linear infinite;
+  background-color: #57bd35;
+  background-image: repeating-linear-gradient(45deg, #00a920, #00a920 25%, #00c42e 25%, #00c42e 50%, #00a920 50%);
+  background-size: 13px 13px;
+}
+
+.Switch--indefinite input:checked + label::after {
+  -webkit-transform: translateX(41px);
+          transform: translateX(41px);
+}
+
+[dir=rtl] .Switch--indefinite input:checked + label::after {
+  -webkit-transform: translateX(-41px);
+          transform: translateX(-41px);
+}
+
+.Switch--indefinite input:checked + label:hover::after {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.Switch-progress-bar {
+  background: rgba(62, 248, 39, 0.5);
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+  width: 100%;
+}
+
+[dir=rtl] .Switch-progress-bar {
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+}
+
+[data-progress="1"] .Switch-progress-bar {
+  -webkit-transform: translateX(-99%);
+          transform: translateX(-99%);
+}
+
+[dir=rtl] [data-progress="1"] .Switch-progress-bar {
+  -webkit-transform: translateX(99%);
+          transform: translateX(99%);
+}
+
+[data-progress="2"] .Switch-progress-bar {
+  -webkit-transform: translateX(-98%);
+          transform: translateX(-98%);
+}
+
+[dir=rtl] [data-progress="2"] .Switch-progress-bar {
+  -webkit-transform: translateX(98%);
+          transform: translateX(98%);
+}
+
+[data-progress="3"] .Switch-progress-bar {
+  -webkit-transform: translateX(-97%);
+          transform: translateX(-97%);
+}
+
+[dir=rtl] [data-progress="3"] .Switch-progress-bar {
+  -webkit-transform: translateX(97%);
+          transform: translateX(97%);
+}
+
+[data-progress="4"] .Switch-progress-bar {
+  -webkit-transform: translateX(-96%);
+          transform: translateX(-96%);
+}
+
+[dir=rtl] [data-progress="4"] .Switch-progress-bar {
+  -webkit-transform: translateX(96%);
+          transform: translateX(96%);
+}
+
+[data-progress="5"] .Switch-progress-bar {
+  -webkit-transform: translateX(-95%);
+          transform: translateX(-95%);
+}
+
+[dir=rtl] [data-progress="5"] .Switch-progress-bar {
+  -webkit-transform: translateX(95%);
+          transform: translateX(95%);
+}
+
+[data-progress="6"] .Switch-progress-bar {
+  -webkit-transform: translateX(-94%);
+          transform: translateX(-94%);
+}
+
+[dir=rtl] [data-progress="6"] .Switch-progress-bar {
+  -webkit-transform: translateX(94%);
+          transform: translateX(94%);
+}
+
+[data-progress="7"] .Switch-progress-bar {
+  -webkit-transform: translateX(-93%);
+          transform: translateX(-93%);
+}
+
+[dir=rtl] [data-progress="7"] .Switch-progress-bar {
+  -webkit-transform: translateX(93%);
+          transform: translateX(93%);
+}
+
+[data-progress="8"] .Switch-progress-bar {
+  -webkit-transform: translateX(-92%);
+          transform: translateX(-92%);
+}
+
+[dir=rtl] [data-progress="8"] .Switch-progress-bar {
+  -webkit-transform: translateX(92%);
+          transform: translateX(92%);
+}
+
+[data-progress="9"] .Switch-progress-bar {
+  -webkit-transform: translateX(-91%);
+          transform: translateX(-91%);
+}
+
+[dir=rtl] [data-progress="9"] .Switch-progress-bar {
+  -webkit-transform: translateX(91%);
+          transform: translateX(91%);
+}
+
+[data-progress="10"] .Switch-progress-bar {
+  -webkit-transform: translateX(-90%);
+          transform: translateX(-90%);
+}
+
+[dir=rtl] [data-progress="10"] .Switch-progress-bar {
+  -webkit-transform: translateX(90%);
+          transform: translateX(90%);
+}
+
+[data-progress="11"] .Switch-progress-bar {
+  -webkit-transform: translateX(-89%);
+          transform: translateX(-89%);
+}
+
+[dir=rtl] [data-progress="11"] .Switch-progress-bar {
+  -webkit-transform: translateX(89%);
+          transform: translateX(89%);
+}
+
+[data-progress="12"] .Switch-progress-bar {
+  -webkit-transform: translateX(-88%);
+          transform: translateX(-88%);
+}
+
+[dir=rtl] [data-progress="12"] .Switch-progress-bar {
+  -webkit-transform: translateX(88%);
+          transform: translateX(88%);
+}
+
+[data-progress="13"] .Switch-progress-bar {
+  -webkit-transform: translateX(-87%);
+          transform: translateX(-87%);
+}
+
+[dir=rtl] [data-progress="13"] .Switch-progress-bar {
+  -webkit-transform: translateX(87%);
+          transform: translateX(87%);
+}
+
+[data-progress="14"] .Switch-progress-bar {
+  -webkit-transform: translateX(-86%);
+          transform: translateX(-86%);
+}
+
+[dir=rtl] [data-progress="14"] .Switch-progress-bar {
+  -webkit-transform: translateX(86%);
+          transform: translateX(86%);
+}
+
+[data-progress="15"] .Switch-progress-bar {
+  -webkit-transform: translateX(-85%);
+          transform: translateX(-85%);
+}
+
+[dir=rtl] [data-progress="15"] .Switch-progress-bar {
+  -webkit-transform: translateX(85%);
+          transform: translateX(85%);
+}
+
+[data-progress="16"] .Switch-progress-bar {
+  -webkit-transform: translateX(-84%);
+          transform: translateX(-84%);
+}
+
+[dir=rtl] [data-progress="16"] .Switch-progress-bar {
+  -webkit-transform: translateX(84%);
+          transform: translateX(84%);
+}
+
+[data-progress="17"] .Switch-progress-bar {
+  -webkit-transform: translateX(-83%);
+          transform: translateX(-83%);
+}
+
+[dir=rtl] [data-progress="17"] .Switch-progress-bar {
+  -webkit-transform: translateX(83%);
+          transform: translateX(83%);
+}
+
+[data-progress="18"] .Switch-progress-bar {
+  -webkit-transform: translateX(-82%);
+          transform: translateX(-82%);
+}
+
+[dir=rtl] [data-progress="18"] .Switch-progress-bar {
+  -webkit-transform: translateX(82%);
+          transform: translateX(82%);
+}
+
+[data-progress="19"] .Switch-progress-bar {
+  -webkit-transform: translateX(-81%);
+          transform: translateX(-81%);
+}
+
+[dir=rtl] [data-progress="19"] .Switch-progress-bar {
+  -webkit-transform: translateX(81%);
+          transform: translateX(81%);
+}
+
+[data-progress="20"] .Switch-progress-bar {
+  -webkit-transform: translateX(-80%);
+          transform: translateX(-80%);
+}
+
+[dir=rtl] [data-progress="20"] .Switch-progress-bar {
+  -webkit-transform: translateX(80%);
+          transform: translateX(80%);
+}
+
+[data-progress="21"] .Switch-progress-bar {
+  -webkit-transform: translateX(-79%);
+          transform: translateX(-79%);
+}
+
+[dir=rtl] [data-progress="21"] .Switch-progress-bar {
+  -webkit-transform: translateX(79%);
+          transform: translateX(79%);
+}
+
+[data-progress="22"] .Switch-progress-bar {
+  -webkit-transform: translateX(-78%);
+          transform: translateX(-78%);
+}
+
+[dir=rtl] [data-progress="22"] .Switch-progress-bar {
+  -webkit-transform: translateX(78%);
+          transform: translateX(78%);
+}
+
+[data-progress="23"] .Switch-progress-bar {
+  -webkit-transform: translateX(-77%);
+          transform: translateX(-77%);
+}
+
+[dir=rtl] [data-progress="23"] .Switch-progress-bar {
+  -webkit-transform: translateX(77%);
+          transform: translateX(77%);
+}
+
+[data-progress="24"] .Switch-progress-bar {
+  -webkit-transform: translateX(-76%);
+          transform: translateX(-76%);
+}
+
+[dir=rtl] [data-progress="24"] .Switch-progress-bar {
+  -webkit-transform: translateX(76%);
+          transform: translateX(76%);
+}
+
+[data-progress="25"] .Switch-progress-bar {
+  -webkit-transform: translateX(-75%);
+          transform: translateX(-75%);
+}
+
+[dir=rtl] [data-progress="25"] .Switch-progress-bar {
+  -webkit-transform: translateX(75%);
+          transform: translateX(75%);
+}
+
+[data-progress="26"] .Switch-progress-bar {
+  -webkit-transform: translateX(-74%);
+          transform: translateX(-74%);
+}
+
+[dir=rtl] [data-progress="26"] .Switch-progress-bar {
+  -webkit-transform: translateX(74%);
+          transform: translateX(74%);
+}
+
+[data-progress="27"] .Switch-progress-bar {
+  -webkit-transform: translateX(-73%);
+          transform: translateX(-73%);
+}
+
+[dir=rtl] [data-progress="27"] .Switch-progress-bar {
+  -webkit-transform: translateX(73%);
+          transform: translateX(73%);
+}
+
+[data-progress="28"] .Switch-progress-bar {
+  -webkit-transform: translateX(-72%);
+          transform: translateX(-72%);
+}
+
+[dir=rtl] [data-progress="28"] .Switch-progress-bar {
+  -webkit-transform: translateX(72%);
+          transform: translateX(72%);
+}
+
+[data-progress="29"] .Switch-progress-bar {
+  -webkit-transform: translateX(-71%);
+          transform: translateX(-71%);
+}
+
+[dir=rtl] [data-progress="29"] .Switch-progress-bar {
+  -webkit-transform: translateX(71%);
+          transform: translateX(71%);
+}
+
+[data-progress="30"] .Switch-progress-bar {
+  -webkit-transform: translateX(-70%);
+          transform: translateX(-70%);
+}
+
+[dir=rtl] [data-progress="30"] .Switch-progress-bar {
+  -webkit-transform: translateX(70%);
+          transform: translateX(70%);
+}
+
+[data-progress="31"] .Switch-progress-bar {
+  -webkit-transform: translateX(-69%);
+          transform: translateX(-69%);
+}
+
+[dir=rtl] [data-progress="31"] .Switch-progress-bar {
+  -webkit-transform: translateX(69%);
+          transform: translateX(69%);
+}
+
+[data-progress="32"] .Switch-progress-bar {
+  -webkit-transform: translateX(-68%);
+          transform: translateX(-68%);
+}
+
+[dir=rtl] [data-progress="32"] .Switch-progress-bar {
+  -webkit-transform: translateX(68%);
+          transform: translateX(68%);
+}
+
+[data-progress="33"] .Switch-progress-bar {
+  -webkit-transform: translateX(-67%);
+          transform: translateX(-67%);
+}
+
+[dir=rtl] [data-progress="33"] .Switch-progress-bar {
+  -webkit-transform: translateX(67%);
+          transform: translateX(67%);
+}
+
+[data-progress="34"] .Switch-progress-bar {
+  -webkit-transform: translateX(-66%);
+          transform: translateX(-66%);
+}
+
+[dir=rtl] [data-progress="34"] .Switch-progress-bar {
+  -webkit-transform: translateX(66%);
+          transform: translateX(66%);
+}
+
+[data-progress="35"] .Switch-progress-bar {
+  -webkit-transform: translateX(-65%);
+          transform: translateX(-65%);
+}
+
+[dir=rtl] [data-progress="35"] .Switch-progress-bar {
+  -webkit-transform: translateX(65%);
+          transform: translateX(65%);
+}
+
+[data-progress="36"] .Switch-progress-bar {
+  -webkit-transform: translateX(-64%);
+          transform: translateX(-64%);
+}
+
+[dir=rtl] [data-progress="36"] .Switch-progress-bar {
+  -webkit-transform: translateX(64%);
+          transform: translateX(64%);
+}
+
+[data-progress="37"] .Switch-progress-bar {
+  -webkit-transform: translateX(-63%);
+          transform: translateX(-63%);
+}
+
+[dir=rtl] [data-progress="37"] .Switch-progress-bar {
+  -webkit-transform: translateX(63%);
+          transform: translateX(63%);
+}
+
+[data-progress="38"] .Switch-progress-bar {
+  -webkit-transform: translateX(-62%);
+          transform: translateX(-62%);
+}
+
+[dir=rtl] [data-progress="38"] .Switch-progress-bar {
+  -webkit-transform: translateX(62%);
+          transform: translateX(62%);
+}
+
+[data-progress="39"] .Switch-progress-bar {
+  -webkit-transform: translateX(-61%);
+          transform: translateX(-61%);
+}
+
+[dir=rtl] [data-progress="39"] .Switch-progress-bar {
+  -webkit-transform: translateX(61%);
+          transform: translateX(61%);
+}
+
+[data-progress="40"] .Switch-progress-bar {
+  -webkit-transform: translateX(-60%);
+          transform: translateX(-60%);
+}
+
+[dir=rtl] [data-progress="40"] .Switch-progress-bar {
+  -webkit-transform: translateX(60%);
+          transform: translateX(60%);
+}
+
+[data-progress="41"] .Switch-progress-bar {
+  -webkit-transform: translateX(-59%);
+          transform: translateX(-59%);
+}
+
+[dir=rtl] [data-progress="41"] .Switch-progress-bar {
+  -webkit-transform: translateX(59%);
+          transform: translateX(59%);
+}
+
+[data-progress="42"] .Switch-progress-bar {
+  -webkit-transform: translateX(-58%);
+          transform: translateX(-58%);
+}
+
+[dir=rtl] [data-progress="42"] .Switch-progress-bar {
+  -webkit-transform: translateX(58%);
+          transform: translateX(58%);
+}
+
+[data-progress="43"] .Switch-progress-bar {
+  -webkit-transform: translateX(-57%);
+          transform: translateX(-57%);
+}
+
+[dir=rtl] [data-progress="43"] .Switch-progress-bar {
+  -webkit-transform: translateX(57%);
+          transform: translateX(57%);
+}
+
+[data-progress="44"] .Switch-progress-bar {
+  -webkit-transform: translateX(-56%);
+          transform: translateX(-56%);
+}
+
+[dir=rtl] [data-progress="44"] .Switch-progress-bar {
+  -webkit-transform: translateX(56%);
+          transform: translateX(56%);
+}
+
+[data-progress="45"] .Switch-progress-bar {
+  -webkit-transform: translateX(-55%);
+          transform: translateX(-55%);
+}
+
+[dir=rtl] [data-progress="45"] .Switch-progress-bar {
+  -webkit-transform: translateX(55%);
+          transform: translateX(55%);
+}
+
+[data-progress="46"] .Switch-progress-bar {
+  -webkit-transform: translateX(-54%);
+          transform: translateX(-54%);
+}
+
+[dir=rtl] [data-progress="46"] .Switch-progress-bar {
+  -webkit-transform: translateX(54%);
+          transform: translateX(54%);
+}
+
+[data-progress="47"] .Switch-progress-bar {
+  -webkit-transform: translateX(-53%);
+          transform: translateX(-53%);
+}
+
+[dir=rtl] [data-progress="47"] .Switch-progress-bar {
+  -webkit-transform: translateX(53%);
+          transform: translateX(53%);
+}
+
+[data-progress="48"] .Switch-progress-bar {
+  -webkit-transform: translateX(-52%);
+          transform: translateX(-52%);
+}
+
+[dir=rtl] [data-progress="48"] .Switch-progress-bar {
+  -webkit-transform: translateX(52%);
+          transform: translateX(52%);
+}
+
+[data-progress="49"] .Switch-progress-bar {
+  -webkit-transform: translateX(-51%);
+          transform: translateX(-51%);
+}
+
+[dir=rtl] [data-progress="49"] .Switch-progress-bar {
+  -webkit-transform: translateX(51%);
+          transform: translateX(51%);
+}
+
+[data-progress="50"] .Switch-progress-bar {
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+[dir=rtl] [data-progress="50"] .Switch-progress-bar {
+  -webkit-transform: translateX(50%);
+          transform: translateX(50%);
+}
+
+[data-progress="51"] .Switch-progress-bar {
+  -webkit-transform: translateX(-49%);
+          transform: translateX(-49%);
+}
+
+[dir=rtl] [data-progress="51"] .Switch-progress-bar {
+  -webkit-transform: translateX(49%);
+          transform: translateX(49%);
+}
+
+[data-progress="52"] .Switch-progress-bar {
+  -webkit-transform: translateX(-48%);
+          transform: translateX(-48%);
+}
+
+[dir=rtl] [data-progress="52"] .Switch-progress-bar {
+  -webkit-transform: translateX(48%);
+          transform: translateX(48%);
+}
+
+[data-progress="53"] .Switch-progress-bar {
+  -webkit-transform: translateX(-47%);
+          transform: translateX(-47%);
+}
+
+[dir=rtl] [data-progress="53"] .Switch-progress-bar {
+  -webkit-transform: translateX(47%);
+          transform: translateX(47%);
+}
+
+[data-progress="54"] .Switch-progress-bar {
+  -webkit-transform: translateX(-46%);
+          transform: translateX(-46%);
+}
+
+[dir=rtl] [data-progress="54"] .Switch-progress-bar {
+  -webkit-transform: translateX(46%);
+          transform: translateX(46%);
+}
+
+[data-progress="55"] .Switch-progress-bar {
+  -webkit-transform: translateX(-45%);
+          transform: translateX(-45%);
+}
+
+[dir=rtl] [data-progress="55"] .Switch-progress-bar {
+  -webkit-transform: translateX(45%);
+          transform: translateX(45%);
+}
+
+[data-progress="56"] .Switch-progress-bar {
+  -webkit-transform: translateX(-44%);
+          transform: translateX(-44%);
+}
+
+[dir=rtl] [data-progress="56"] .Switch-progress-bar {
+  -webkit-transform: translateX(44%);
+          transform: translateX(44%);
+}
+
+[data-progress="57"] .Switch-progress-bar {
+  -webkit-transform: translateX(-43%);
+          transform: translateX(-43%);
+}
+
+[dir=rtl] [data-progress="57"] .Switch-progress-bar {
+  -webkit-transform: translateX(43%);
+          transform: translateX(43%);
+}
+
+[data-progress="58"] .Switch-progress-bar {
+  -webkit-transform: translateX(-42%);
+          transform: translateX(-42%);
+}
+
+[dir=rtl] [data-progress="58"] .Switch-progress-bar {
+  -webkit-transform: translateX(42%);
+          transform: translateX(42%);
+}
+
+[data-progress="59"] .Switch-progress-bar {
+  -webkit-transform: translateX(-41%);
+          transform: translateX(-41%);
+}
+
+[dir=rtl] [data-progress="59"] .Switch-progress-bar {
+  -webkit-transform: translateX(41%);
+          transform: translateX(41%);
+}
+
+[data-progress="60"] .Switch-progress-bar {
+  -webkit-transform: translateX(-40%);
+          transform: translateX(-40%);
+}
+
+[dir=rtl] [data-progress="60"] .Switch-progress-bar {
+  -webkit-transform: translateX(40%);
+          transform: translateX(40%);
+}
+
+[data-progress="61"] .Switch-progress-bar {
+  -webkit-transform: translateX(-39%);
+          transform: translateX(-39%);
+}
+
+[dir=rtl] [data-progress="61"] .Switch-progress-bar {
+  -webkit-transform: translateX(39%);
+          transform: translateX(39%);
+}
+
+[data-progress="62"] .Switch-progress-bar {
+  -webkit-transform: translateX(-38%);
+          transform: translateX(-38%);
+}
+
+[dir=rtl] [data-progress="62"] .Switch-progress-bar {
+  -webkit-transform: translateX(38%);
+          transform: translateX(38%);
+}
+
+[data-progress="63"] .Switch-progress-bar {
+  -webkit-transform: translateX(-37%);
+          transform: translateX(-37%);
+}
+
+[dir=rtl] [data-progress="63"] .Switch-progress-bar {
+  -webkit-transform: translateX(37%);
+          transform: translateX(37%);
+}
+
+[data-progress="64"] .Switch-progress-bar {
+  -webkit-transform: translateX(-36%);
+          transform: translateX(-36%);
+}
+
+[dir=rtl] [data-progress="64"] .Switch-progress-bar {
+  -webkit-transform: translateX(36%);
+          transform: translateX(36%);
+}
+
+[data-progress="65"] .Switch-progress-bar {
+  -webkit-transform: translateX(-35%);
+          transform: translateX(-35%);
+}
+
+[dir=rtl] [data-progress="65"] .Switch-progress-bar {
+  -webkit-transform: translateX(35%);
+          transform: translateX(35%);
+}
+
+[data-progress="66"] .Switch-progress-bar {
+  -webkit-transform: translateX(-34%);
+          transform: translateX(-34%);
+}
+
+[dir=rtl] [data-progress="66"] .Switch-progress-bar {
+  -webkit-transform: translateX(34%);
+          transform: translateX(34%);
+}
+
+[data-progress="67"] .Switch-progress-bar {
+  -webkit-transform: translateX(-33%);
+          transform: translateX(-33%);
+}
+
+[dir=rtl] [data-progress="67"] .Switch-progress-bar {
+  -webkit-transform: translateX(33%);
+          transform: translateX(33%);
+}
+
+[data-progress="68"] .Switch-progress-bar {
+  -webkit-transform: translateX(-32%);
+          transform: translateX(-32%);
+}
+
+[dir=rtl] [data-progress="68"] .Switch-progress-bar {
+  -webkit-transform: translateX(32%);
+          transform: translateX(32%);
+}
+
+[data-progress="69"] .Switch-progress-bar {
+  -webkit-transform: translateX(-31%);
+          transform: translateX(-31%);
+}
+
+[dir=rtl] [data-progress="69"] .Switch-progress-bar {
+  -webkit-transform: translateX(31%);
+          transform: translateX(31%);
+}
+
+[data-progress="70"] .Switch-progress-bar {
+  -webkit-transform: translateX(-30%);
+          transform: translateX(-30%);
+}
+
+[dir=rtl] [data-progress="70"] .Switch-progress-bar {
+  -webkit-transform: translateX(30%);
+          transform: translateX(30%);
+}
+
+[data-progress="71"] .Switch-progress-bar {
+  -webkit-transform: translateX(-29%);
+          transform: translateX(-29%);
+}
+
+[dir=rtl] [data-progress="71"] .Switch-progress-bar {
+  -webkit-transform: translateX(29%);
+          transform: translateX(29%);
+}
+
+[data-progress="72"] .Switch-progress-bar {
+  -webkit-transform: translateX(-28%);
+          transform: translateX(-28%);
+}
+
+[dir=rtl] [data-progress="72"] .Switch-progress-bar {
+  -webkit-transform: translateX(28%);
+          transform: translateX(28%);
+}
+
+[data-progress="73"] .Switch-progress-bar {
+  -webkit-transform: translateX(-27%);
+          transform: translateX(-27%);
+}
+
+[dir=rtl] [data-progress="73"] .Switch-progress-bar {
+  -webkit-transform: translateX(27%);
+          transform: translateX(27%);
+}
+
+[data-progress="74"] .Switch-progress-bar {
+  -webkit-transform: translateX(-26%);
+          transform: translateX(-26%);
+}
+
+[dir=rtl] [data-progress="74"] .Switch-progress-bar {
+  -webkit-transform: translateX(26%);
+          transform: translateX(26%);
+}
+
+[data-progress="75"] .Switch-progress-bar {
+  -webkit-transform: translateX(-25%);
+          transform: translateX(-25%);
+}
+
+[dir=rtl] [data-progress="75"] .Switch-progress-bar {
+  -webkit-transform: translateX(25%);
+          transform: translateX(25%);
+}
+
+[data-progress="76"] .Switch-progress-bar {
+  -webkit-transform: translateX(-24%);
+          transform: translateX(-24%);
+}
+
+[dir=rtl] [data-progress="76"] .Switch-progress-bar {
+  -webkit-transform: translateX(24%);
+          transform: translateX(24%);
+}
+
+[data-progress="77"] .Switch-progress-bar {
+  -webkit-transform: translateX(-23%);
+          transform: translateX(-23%);
+}
+
+[dir=rtl] [data-progress="77"] .Switch-progress-bar {
+  -webkit-transform: translateX(23%);
+          transform: translateX(23%);
+}
+
+[data-progress="78"] .Switch-progress-bar {
+  -webkit-transform: translateX(-22%);
+          transform: translateX(-22%);
+}
+
+[dir=rtl] [data-progress="78"] .Switch-progress-bar {
+  -webkit-transform: translateX(22%);
+          transform: translateX(22%);
+}
+
+[data-progress="79"] .Switch-progress-bar {
+  -webkit-transform: translateX(-21%);
+          transform: translateX(-21%);
+}
+
+[dir=rtl] [data-progress="79"] .Switch-progress-bar {
+  -webkit-transform: translateX(21%);
+          transform: translateX(21%);
+}
+
+[data-progress="80"] .Switch-progress-bar {
+  -webkit-transform: translateX(-20%);
+          transform: translateX(-20%);
+}
+
+[dir=rtl] [data-progress="80"] .Switch-progress-bar {
+  -webkit-transform: translateX(20%);
+          transform: translateX(20%);
+}
+
+[data-progress="81"] .Switch-progress-bar {
+  -webkit-transform: translateX(-19%);
+          transform: translateX(-19%);
+}
+
+[dir=rtl] [data-progress="81"] .Switch-progress-bar {
+  -webkit-transform: translateX(19%);
+          transform: translateX(19%);
+}
+
+[data-progress="82"] .Switch-progress-bar {
+  -webkit-transform: translateX(-18%);
+          transform: translateX(-18%);
+}
+
+[dir=rtl] [data-progress="82"] .Switch-progress-bar {
+  -webkit-transform: translateX(18%);
+          transform: translateX(18%);
+}
+
+[data-progress="83"] .Switch-progress-bar {
+  -webkit-transform: translateX(-17%);
+          transform: translateX(-17%);
+}
+
+[dir=rtl] [data-progress="83"] .Switch-progress-bar {
+  -webkit-transform: translateX(17%);
+          transform: translateX(17%);
+}
+
+[data-progress="84"] .Switch-progress-bar {
+  -webkit-transform: translateX(-16%);
+          transform: translateX(-16%);
+}
+
+[dir=rtl] [data-progress="84"] .Switch-progress-bar {
+  -webkit-transform: translateX(16%);
+          transform: translateX(16%);
+}
+
+[data-progress="85"] .Switch-progress-bar {
+  -webkit-transform: translateX(-15%);
+          transform: translateX(-15%);
+}
+
+[dir=rtl] [data-progress="85"] .Switch-progress-bar {
+  -webkit-transform: translateX(15%);
+          transform: translateX(15%);
+}
+
+[data-progress="86"] .Switch-progress-bar {
+  -webkit-transform: translateX(-14%);
+          transform: translateX(-14%);
+}
+
+[dir=rtl] [data-progress="86"] .Switch-progress-bar {
+  -webkit-transform: translateX(14%);
+          transform: translateX(14%);
+}
+
+[data-progress="87"] .Switch-progress-bar {
+  -webkit-transform: translateX(-13%);
+          transform: translateX(-13%);
+}
+
+[dir=rtl] [data-progress="87"] .Switch-progress-bar {
+  -webkit-transform: translateX(13%);
+          transform: translateX(13%);
+}
+
+[data-progress="88"] .Switch-progress-bar {
+  -webkit-transform: translateX(-12%);
+          transform: translateX(-12%);
+}
+
+[dir=rtl] [data-progress="88"] .Switch-progress-bar {
+  -webkit-transform: translateX(12%);
+          transform: translateX(12%);
+}
+
+[data-progress="89"] .Switch-progress-bar {
+  -webkit-transform: translateX(-11%);
+          transform: translateX(-11%);
+}
+
+[dir=rtl] [data-progress="89"] .Switch-progress-bar {
+  -webkit-transform: translateX(11%);
+          transform: translateX(11%);
+}
+
+[data-progress="90"] .Switch-progress-bar {
+  -webkit-transform: translateX(-10%);
+          transform: translateX(-10%);
+}
+
+[dir=rtl] [data-progress="90"] .Switch-progress-bar {
+  -webkit-transform: translateX(10%);
+          transform: translateX(10%);
+}
+
+[data-progress="91"] .Switch-progress-bar {
+  -webkit-transform: translateX(-9%);
+          transform: translateX(-9%);
+}
+
+[dir=rtl] [data-progress="91"] .Switch-progress-bar {
+  -webkit-transform: translateX(9%);
+          transform: translateX(9%);
+}
+
+[data-progress="92"] .Switch-progress-bar {
+  -webkit-transform: translateX(-8%);
+          transform: translateX(-8%);
+}
+
+[dir=rtl] [data-progress="92"] .Switch-progress-bar {
+  -webkit-transform: translateX(8%);
+          transform: translateX(8%);
+}
+
+[data-progress="93"] .Switch-progress-bar {
+  -webkit-transform: translateX(-7%);
+          transform: translateX(-7%);
+}
+
+[dir=rtl] [data-progress="93"] .Switch-progress-bar {
+  -webkit-transform: translateX(7%);
+          transform: translateX(7%);
+}
+
+[data-progress="94"] .Switch-progress-bar {
+  -webkit-transform: translateX(-6%);
+          transform: translateX(-6%);
+}
+
+[dir=rtl] [data-progress="94"] .Switch-progress-bar {
+  -webkit-transform: translateX(6%);
+          transform: translateX(6%);
+}
+
+[data-progress="95"] .Switch-progress-bar {
+  -webkit-transform: translateX(-5%);
+          transform: translateX(-5%);
+}
+
+[dir=rtl] [data-progress="95"] .Switch-progress-bar {
+  -webkit-transform: translateX(5%);
+          transform: translateX(5%);
+}
+
+[data-progress="96"] .Switch-progress-bar {
+  -webkit-transform: translateX(-4%);
+          transform: translateX(-4%);
+}
+
+[dir=rtl] [data-progress="96"] .Switch-progress-bar {
+  -webkit-transform: translateX(4%);
+          transform: translateX(4%);
+}
+
+[data-progress="97"] .Switch-progress-bar {
+  -webkit-transform: translateX(-3%);
+          transform: translateX(-3%);
+}
+
+[dir=rtl] [data-progress="97"] .Switch-progress-bar {
+  -webkit-transform: translateX(3%);
+          transform: translateX(3%);
+}
+
+[data-progress="98"] .Switch-progress-bar {
+  -webkit-transform: translateX(-2%);
+          transform: translateX(-2%);
+}
+
+[dir=rtl] [data-progress="98"] .Switch-progress-bar {
+  -webkit-transform: translateX(2%);
+          transform: translateX(2%);
+}
+
+[data-progress="99"] .Switch-progress-bar {
+  -webkit-transform: translateX(-1%);
+          transform: translateX(-1%);
+}
+
+[dir=rtl] [data-progress="99"] .Switch-progress-bar {
+  -webkit-transform: translateX(1%);
+          transform: translateX(1%);
+}
+
+[data-progress="100"] .Switch-progress-bar {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+}
+
+[dir=rtl] [data-progress="100"] .Switch-progress-bar {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+}

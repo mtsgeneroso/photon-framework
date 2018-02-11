@@ -1,0 +1,59 @@
+
+/* Firefox Colors SCSS Variables v1.3.0 */
+/* Font mixins. Changes here affect *all* apps */
+/* Shared mixins. Bear in mind changes here impact *all* apps. */
+/* Firefox Colors SCSS Variables v1.3.0 */
+.AddonMeta-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+.AddonMeta-text,
+.AddonMeta-loading-wrapper {
+  text-align: left;
+  margin: 0;
+  max-width: 30%;
+  padding: 0;
+}
+
+[dir=rtl] .AddonMeta-text, [dir=rtl]
+.AddonMeta-loading-wrapper {
+  text-align: right;
+}
+
+.AddonMeta-item-header {
+  display: block;
+  height: 17px;
+  margin: 0;
+  padding: 0;
+}
+
+.AddonMeta-item-subheader {
+  font-family: "Fira Sans", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+[dir=ltr] .AddonMeta .Rating-star-group {
+  margin-right: -2.5px;
+}
+
+[dir=rtl] .AddonMeta .Rating-star-group {
+  margin-left: -2.5px;
+}
+
+[dir=ltr] .AddonMeta .Rating-star-group {
+  margin-left: -2.5px;
+}
+
+[dir=rtl] .AddonMeta .Rating-star-group {
+  margin-right: -2.5px;
+}

@@ -1,0 +1,52 @@
+
+/* Firefox Colors SCSS Variables v1.3.0 */
+/* Font mixins. Changes here affect *all* apps */
+/* Shared mixins. Bear in mind changes here impact *all* apps. */
+/* Firefox Colors SCSS Variables v1.3.0 */
+.AddonBadges {
+  width: 100%;
+}
+
+@media (min-width: 720px) {
+  .AddonBadges {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+  }
+}
+
+.AddonBadges .Badge {
+  text-align: right;
+}
+
+[dir=rtl] .AddonBadges .Badge {
+  text-align: left;
+}
+
+@media (min-width: 720px) {
+  .AddonBadges .Badge {
+    text-align: left;
+  }
+  [dir=ltr] .AddonBadges .Badge {
+    margin-right: 6px;
+  }
+  [dir=rtl] .AddonBadges .Badge {
+    margin-left: 6px;
+  }
+  [dir=rtl] .AddonBadges .Badge {
+    text-align: right;
+  }
+}
+
+@media (min-width: 900px) {
+  [dir=ltr] .AddonBadges .Badge {
+    margin-right: 24px;
+  }
+  [dir=rtl] .AddonBadges .Badge {
+    margin-left: 24px;
+  }
+}

@@ -1,0 +1,104 @@
+
+/* Firefox Colors SCSS Variables v1.3.0 */
+/* Font mixins. Changes here affect *all* apps */
+/* Shared mixins. Bear in mind changes here impact *all* apps. */
+/* Firefox Colors SCSS Variables v1.3.0 */
+.CategoryHeader {
+  border-radius: 9px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+@media (min-width: 720px) {
+  .CategoryHeader {
+    margin-bottom: 30px;
+  }
+}
+
+.CategoryHeader-wrapper {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 10px;
+}
+
+.CategoryHeader-contents {
+  text-align: left;
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+}
+
+[dir=rtl] .CategoryHeader-contents {
+  text-align: right;
+}
+
+.CategoryHeader--loading .CategoryHeader-contents {
+  width: 50%;
+}
+
+.CategoryHeader-name {
+  font-family: "Fira Sans", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  margin: 10px 0;
+}
+
+@media (min-width: 500px) {
+  .CategoryHeader-name {
+    font-size: 36px;
+  }
+}
+
+.CategoryHeader-description {
+  display: none;
+  margin-top: 5px;
+}
+
+@media (min-width: 500px) {
+  .CategoryHeader-description {
+    display: block;
+  }
+}
+
+.CategoryHeader--loading .CategoryHeader-description {
+  text-align: left;
+}
+
+[dir=rtl] .CategoryHeader--loading .CategoryHeader-description {
+  text-align: right;
+}
+
+.CategoryHeader-paragraph {
+  font-size: 18px;
+  margin: 0;
+}
+
+.CategoryHeader-icon {
+  text-align: right;
+  display: block;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+[dir=rtl] .CategoryHeader-icon {
+  text-align: left;
+}
+
+@media (min-width: 500px) {
+  .CategoryHeader-icon .Icon {
+    margin: 10px;
+  }
+}

@@ -1,0 +1,32 @@
+
+/* Firefox Colors SCSS Variables v1.3.0 */
+.StaticPage {
+  margin: 20px 10px;
+}
+
+.StaticPage .Card-contents li,
+.StaticPage .Card-contents p {
+  font-size: 14px;
+}
+
+.StaticPage h1,
+.StaticPage h2 {
+  color: #0c0c0d;
+}
+
+.StaticPage h1 {
+  font-size: 16px;
+}
+
+.StaticPage h2,
+.StaticPage h3 {
+  font-size: 14px;
+}
+
+.StaticPage h3 {
+  color: #4a4a4f;
+}
+
+.StaticPageWrapper {
+  max-width: 960px;
+}

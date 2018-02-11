@@ -1,0 +1,148 @@
+
+
+/* Firefox Colors SCSS Variables v1.3.0 */
+/* Font mixins. Changes here affect *all* apps */
+/* Shared mixins. Bear in mind changes here impact *all* apps. */
+/* Firefox Colors SCSS Variables v1.3.0 */
+html,
+body {
+  background: #0f1126;
+  height: 100%;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+input,
+textarea {
+  font-family: "Fira Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  background: #fff;
+  border: 1px solid #737373;
+  border-radius: 4px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  font-size: 14px;
+  line-height: 1.4;
+  padding: 4px;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  font-family: "Fira Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  color: #1d1d1d;
+  font-size: 14px;
+  line-height: 19px;
+}
+
+#react-view {
+  height: 100%;
+}
+
+.amo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100%;
+}
+
+.App-content {
+  background: #e9ecef;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  padding: 0 0 10px;
+}
+
+@media (min-width: 720px) {
+  .App-content {
+    padding: 0 0 24px;
+  }
+}
+
+.App-content-wrapper {
+  margin: 0 auto;
+  max-width: 1366px;
+}
+
+h1,
+h2 {
+  font-family: "Fira Sans", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  color: #000;
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 36px;
+  line-height: 1;
+}
+
+h2 {
+  font-size: 12px;
+}
+
+h3 {
+  font-family: "Fira Sans", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+}
+
+a:link {
+  font-family: "Fira Sans", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  color: #0d96ff;
+}
+
+em {
+  font-family: "Fira Sans", sans-serif;
+  font-style: italic;
+  font-weight: 400;
+}
+
+strong {
+  font-family: "Fira Sans", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.caption {
+  color: #000;
+  font-size: 10px;
+  line-height: 11px;
+}
+
+.date-time {
+  color: #b1b1b1;
+  font-size: 14px;
+}
+
+button {
+  background: none;
+  border: none;
+}
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}

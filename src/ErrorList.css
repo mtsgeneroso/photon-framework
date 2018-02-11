@@ -1,0 +1,21 @@
+
+/* Firefox Colors SCSS Variables v1.3.0 */
+.ErrorList {
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 0;
+}
+
+.ErrorList-item,
+.CardList .ErrorList-item {
+  background: none;
+}
+
+.ErrorList-item {
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+.ErrorList-item:last-child {
+  margin-bottom: 0;
+}
