@@ -1,0 +1,161 @@
+
+/* Firefox Colors SCSS Variables v1.3.0 */
+
+/* Font mixins. Changes here affect *all* apps */
+
+/* Shared mixins. Bear in mind changes here impact *all* apps. */
+
+/* Firefox Colors SCSS Variables v1.3.0 */
+
+/* Firefox Colors SCSS Variables v1.3.0 */
+.Home {
+  padding: 10px;
+}
+
+@media (min-width: 720px) {
+  .Home {
+    padding: 24px;
+  }
+}
+
+.Home-SubjectShelf .Card-header {
+  display: block;
+}
+
+@media (min-width: 720px) {
+  .Home-SubjectShelf .Card-header {
+    display: none;
+  }
+}
+
+.Home-SubjectShelf .Card-contents {
+  -webkit-box-direction: normal;
+  -webkit-box-orient: horizontal;
+  -webkit-box-pack: justify;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin: 0 auto;
+  overflow: auto;
+  width: 100%;
+}
+
+@media (min-width: 720px) {
+  .Home-SubjectShelf .Card-contents {
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    padding: 24px 36px;
+  }
+}
+
+.Home-SubjectShelf-text-wrapper {
+  align-self: center;
+  display: none;
+  -ms-flex-item-align: center;
+  height: auto;
+}
+
+@media (min-width: 720px) {
+  .Home-SubjectShelf-text-wrapper {
+    align-self: center;
+    display: block;
+    -ms-flex-item-align: center;
+    max-width: 130px;
+  }
+}
+
+@media (min-width: 900px) {
+  .Home-SubjectShelf-text-wrapper {
+    max-width: 250px;
+  }
+}
+
+.Home-SubjectShelf-subheading {
+  font-size: 14px;
+  margin: 0;
+}
+
+.Home-SubjectShelf-list {
+  align-self: center;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: horizontal;
+  -webkit-box-pack: justify;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -ms-flex-item-align: center;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin: 0 auto;
+  overflow: auto;
+  padding: 0;
+  width: 100%;
+}
+
+@media (min-width: 720px) {
+  .Home-SubjectShelf-list {
+    align-self: auto;
+    -ms-flex-item-align: auto;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+  }
+}
+
+.Home-SubjectShelf-list-item {
+  -webkit-box-flex: 1;
+  flex-grow: 1;
+  -ms-flex-positive: 1;
+  list-style-type: none;
+  margin: 15px 0;
+  text-align: center;
+  width: 40%;
+}
+
+@media (min-width: 720px) {
+  .Home-SubjectShelf-list-item {
+    margin: 0;
+  }
+}
+
+.Home-SubjectShelf-link {
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.Home-SubjectShelf-link:link, .Home-SubjectShelf-link:visited {
+  color: #343a40;
+}
+
+.Home-SubjectShelf-link:active, .Home-SubjectShelf-link:focus, .Home-SubjectShelf-link:hover {
+  color: #0d96ff;
+  text-decoration: underline;
+}
+
+.Home-SubjectShelf-list-item .Icon {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 64px;
+  border-radius: 9px;
+  content: "";
+  display: block;
+  height: 64px;
+  margin-bottom: 5px;
+  -webkit-transform: scale(.8);
+  transform: scale(.8);
+  width: 100%;
+}
+
+@media (min-width: 500px) {
+  .Home-SubjectShelf-list-item .Icon {
+    -webkit-transform: initial;
+    transform: initial;
+  }
+}

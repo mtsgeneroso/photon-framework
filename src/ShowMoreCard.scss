@@ -1,0 +1,26 @@
+
+.ShowMoreCard-contents {
+  max-height: 150px;
+  overflow: hidden;
+  position: relative;
+  word-wrap: break-word;
+}
+
+.ShowMoreCard-contents::after {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), to(#ffffff));
+  background: linear-gradient(rgba(255, 255, 255, 0), #ffffff);
+  bottom: 0;
+  content: "";
+  height: 20px;
+  left: 0;
+  position: absolute;
+  width: 100%;
+}
+
+.ShowMoreCard--expanded .ShowMoreCard-contents {
+  max-height: none;
+}
+
+.ShowMoreCard--expanded .ShowMoreCard-contents::after {
+  display: none;
+}

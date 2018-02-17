@@ -1,0 +1,72 @@
+
+/* Firefox Colors SCSS Variables v1.3.0 */
+
+/* Font mixins. Changes here affect *all* apps */
+
+/* Shared mixins. Bear in mind changes here impact *all* apps. */
+
+/* Firefox Colors SCSS Variables v1.3.0 */
+.Hero {
+  margin: 0 0 10px;
+}
+
+@media (min-width: 720px) {
+  .Hero {
+    margin: 0 0 24px;
+  }
+}
+
+.Hero .Card-contents {
+  padding: 12px;
+}
+
+@media (min-width: 720px) {
+  .Hero .Card-contents {
+    padding: 24px;
+  }
+}
+
+.Hero-contents {
+  display: grid;
+  grid-gap: 12px;
+  grid-template: 1fr;
+  grid-template-areas: "first" "second" "third";
+  padding-bottom: 10px;
+}
+
+@media (min-width: 500px) {
+  .Hero-contents {
+    grid-template: 1fr 1fr / 60% 1fr;
+    grid-template-areas: "first second" "first third";
+    height: auto;
+    margin-bottom: -12px;
+  }
+}
+
+@media (min-width: 720px) {
+  .Hero-contents {
+    grid-gap: 24px;
+  }
+}
+
+.Hero .HeroSection:first-of-type {
+  grid-area: first;
+}
+
+.Hero .HeroSection:nth-of-type(2) {
+  grid-area: second;
+}
+
+.Hero .HeroSection:nth-of-type(3) {
+  grid-area: third;
+}
+
+@media (min-width: 500px) {
+  .Hero .HeroSection:nth-of-type(2) .HeroSection-content h3, .Hero .HeroSection:nth-of-type(3) .HeroSection-content h3 {
+    font-size: 22px;
+  }
+
+  .Hero .HeroSection:nth-of-type(2) .HeroSection-content p, .Hero .HeroSection:nth-of-type(3) .HeroSection-content p {
+    display: none;
+  }
+}

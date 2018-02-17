@@ -1,0 +1,293 @@
+
+/* Firefox Colors SCSS Variables v1.3.0 */
+
+/* Font mixins. Changes here affect *all* apps */
+
+/* Shared mixins. Bear in mind changes here impact *all* apps. */
+
+/* Firefox Colors SCSS Variables v1.3.0 */
+.SearchResult {
+  list-style-type: none;
+  margin: 0 0 1px;
+}
+
+.SearchResult-link {
+  color: #333333;
+  text-decoration: none;
+}
+
+.SearchResult-result {
+  -webkit-box-direction: normal;
+  -webkit-box-orient: horizontal;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.SearchResult-icon-wrapper {
+  -webkit-box-ordinal-group: 2;
+  -ms-flex-order: 1;
+  order: 1;
+}
+
+.SearchResult--theme .SearchResult-icon-wrapper {
+  -webkit-box-flex: 1;
+  flex-grow: 1;
+  -ms-flex-positive: 1;
+  margin-bottom: 10px;
+  min-height: 64px;
+  overflow: hidden;
+  width: calc(100% + 20px);
+}
+
+@media (min-width: 720px) {
+  .SearchResult-icon-wrapper {
+    border-radius: 9px;
+  }
+}
+
+.SearchResult-icon-wrapper--no-theme-image {
+  align-items: center;
+  background: #cccccc;
+  -webkit-box-align: center;
+  -webkit-box-pack: center;
+  color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  -ms-flex-pack: center;
+  font-size: 14px;
+  font-weight: normal;
+  justify-content: center;
+  text-align: center;
+  text-shadow: 0 0 1px #343a40;
+}
+
+.SearchResult-icon {
+  display: inline-block;
+  height: 32px;
+  width: 32px;
+}
+
+.SearchResult--theme .SearchResult-icon {
+  display: block;
+  height: 64px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: top right;
+  object-position: top right;
+  width: 100%;
+}
+
+.SearchResult-contents {
+  -webkit-box-direction: normal;
+  -webkit-box-flex: 1;
+  -webkit-box-ordinal-group: 2;
+  -webkit-box-orient: horizontal;
+  -webkit-box-pack: justify;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  flex-grow: 1;
+  -ms-flex-order: 1;
+  -ms-flex-pack: justify;
+  -ms-flex-positive: 1;
+  justify-content: space-between;
+  margin: 0 10px;
+  order: 1;
+  width: 0;
+}
+
+@media (min-width: 500px) {
+  .SearchResult--theme .SearchResult-contents {
+    width: 50%;
+  }
+
+  [dir=ltr] .SearchResult--theme .SearchResult-contents {
+    margin-left: 0;
+  }
+
+  [dir=rtl] .SearchResult--theme .SearchResult-contents {
+    margin-right: 0;
+  }
+}
+
+.SearchResult-name {
+  -webkit-box-flex: 1;
+  color: #343a40;
+  flex-grow: 1;
+  -ms-flex-positive: 1;
+  font-family: "Fira Sans", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.2;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  width: 100%;
+  word-wrap: break-word;
+}
+
+.SearchResult-link:focus .SearchResult-name,
+.SearchResult-link:hover .SearchResult-name {
+  color: #0d96ff;
+}
+
+.SearchResult-name .LoadingText {
+  margin-bottom: 5px;
+}
+
+.SearchResult-summary {
+  display: none;
+}
+
+@media (min-width: 500px) {
+  .SearchResult-summary {
+    -webkit-box-flex: 1;
+    color: #343a40;
+    display: block;
+    flex-grow: 1;
+    -ms-flex-positive: 1;
+    font-size: 12px;
+    font-weight: normal;
+    margin: 0;
+    max-width: 465px;
+    width: 100%;
+    word-wrap: break-word;
+  }
+}
+
+.SearchResult-metadata {
+  -webkit-box-direction: normal;
+  -webkit-box-flex: 1;
+  -webkit-box-orient: horizontal;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  flex-grow: 1;
+  -ms-flex-positive: 1;
+  width: 100%;
+}
+
+.SearchResult-rating {
+  display: inline-block;
+  width: auto;
+}
+
+[dir=ltr] .SearchResult-rating {
+  margin-left: -3px;
+}
+
+[dir=rtl] .SearchResult-rating {
+  margin-right: -3px;
+}
+
+[dir=ltr] .SearchResult-rating {
+  margin-right: 10px;
+}
+
+[dir=rtl] .SearchResult-rating {
+  margin-left: 10px;
+}
+
+.SearchResult-rating .Rating {
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  margin: 0;
+}
+
+.SearchResult--theme .SearchResult-rating {
+  width: auto;
+}
+
+.SearchResult-author {
+  display: none;
+  word-wrap: break-word;
+}
+
+@media (min-width: 500px) {
+  .SearchResult-author {
+    display: block;
+  }
+}
+
+.SearchResult-users-icon {
+  height: 10px;
+  margin-bottom: -1px;
+}
+
+.SearchResult-users {
+  -webkit-box-flex: 1;
+  -webkit-box-ordinal-group: 4;
+  flex-grow: 1;
+  -ms-flex-order: 3;
+  -ms-flex-positive: 1;
+  order: 3;
+  width: 100%;
+}
+
+[dir=ltr] .SearchResult-users {
+  margin-left: 39.5px;
+}
+
+[dir=rtl] .SearchResult-users {
+  margin-right: 39.5px;
+}
+
+@media (min-width: 500px) {
+  .SearchResult-users {
+    -webkit-box-flex: 0;
+    -webkit-box-ordinal-group: 2;
+    flex-grow: 0;
+    -ms-flex-order: 1;
+    -ms-flex-positive: 0;
+    order: 1;
+    width: auto;
+  }
+
+  [dir=ltr] .SearchResult-users {
+    margin-left: 0;
+  }
+
+  [dir=rtl] .SearchResult-users {
+    margin-right: 0;
+  }
+}
+
+[dir=ltr] .SearchResult--theme .SearchResult-users {
+  margin-left: 7.5px;
+}
+
+[dir=rtl] .SearchResult--theme .SearchResult-users {
+  margin-right: 7.5px;
+}
+
+@media (min-width: 500px) {
+  [dir=ltr] .SearchResult--theme .SearchResult-users {
+    margin-left: -2.5px;
+  }
+
+  [dir=rtl] .SearchResult--theme .SearchResult-users {
+    margin-right: -2.5px;
+  }
+}
+
+.SearchResult--meta-section {
+  color: #6a6a6a;
+  font-size: 12px;
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+}

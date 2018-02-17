@@ -1,0 +1,35 @@
+.CardList {
+  margin: 10px 0;
+}
+
+.CardList .Card-contents {
+  background: none;
+  padding: 0;
+}
+
+.CardList ul {
+  margin: 0;
+  padding: 0;
+}
+
+.CardList ul > li {
+  background: #ffffff;
+  margin-bottom: 1px;
+  padding: 10px;
+}
+
+.CardList ul > li:last-of-type {
+  margin-bottom: 0;
+}
+
+@media (min-width: 720px) {
+  .CardList ul > li {
+    padding: 24px;
+  }
+}
+
+@media (min-width: 720px) {
+  .CardList {
+    margin: 24px 0;
+  }
+}

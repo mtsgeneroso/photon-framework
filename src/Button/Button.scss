@@ -24,666 +24,666 @@ div(dir='ltr')
 
 /* Button >> Neutral */
 .Button--neutral {
-    font-family: "Fira Sans", sans-serif;
-    font-style: normal;
+  align-items: center;
+  background: rgba(12, 12, 13, .1);
+  border: 1px solid transparent;
+  border-radius: 2px;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "Fira Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  height: 32px;
+  justify-content: center;
+  line-height: 1.3;
+  margin: 0;
+  padding: 0 8px;
+  text-decoration: none;
+  transition-duration: all 1050ms, padding 150ms;
+  transition-property: background-color border-color color;
+  transition-timing-function: cubic-bezier(.07, .95, 0, 1);
+
+  & .Icon {
+    height: 13px;
+    width: 13px;
+  }
+
+  &, &:link {
+    color: #0c0c0d;
+    font-size: 14px;
     font-weight: 400;
-    align-items: center;
-    background: rgba(12, 12, 13, 0.1);
-    border: 1px solid transparent;
-    border-radius: 2px;
-    cursor: pointer;
-    display: inline-flex;
-    height: 32px;
-    justify-content: center;
-    line-height: 1.3;
-    margin: 0;
-    padding: 0 8px;
-    text-decoration: none;
-    transition-duration: all 1050ms, padding 150ms;
-    transition-property: background-color border-color color;
-    transition-timing-function: cubic-bezier(0.07, 0.95, 0, 1);
+  }
 
-    & .Icon {
-        height: 13px;
-        width: 13px;
-    }
+  &.Button--puffy, &:link.Button--puffy {
+    border-radius: 4px;
+    font-size: 15px;
+    height: 48px;
+    padding: 0 16px;
+  }
 
-    &, &:link {
-        color: #0c0c0d;
-        font-size: 14px;
-        font-weight: 400;
-    }
+  &.Button--puffy .Icon, &:link.Button--puffy .Icon {
+    height: 15px;
+    width: 15px;
+  }
 
-    &.Button--puffy, &:link.Button--puffy {
-        border-radius: 4px;
-        font-size: 15px;
-        height: 48px;
-        padding: 0 16px;
-    }
+  &.Button--micro, &:link.Button--micro {
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .5);
+  }
 
-    &.Button--puffy .Icon, &:link.Button--puffy .Icon {
-        height: 15px;
-        width: 15px;
-    }
+  &.Button--micro, &.Button--micro:link, &:link.Button--micro, &:link.Button--micro:link {
+    font-size: 11px;
+    height: 24px;
+  }
 
-    &.Button--micro, &:link.Button--micro {
-        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
-    }
+  &.Button--micro .Icon, &:link.Button--micro .Icon {
+    height: 11px;
+    width: 11px;
+  }
 
-    &.Button--micro, &.Button--micro:link, &:link.Button--micro, &:link.Button--micro:link {
-        font-size: 11px;
-        height: 24px;
-    }
+  &.Button--micro:active:not(.Button--disabled), &:link.Button--micro:active:not(.Button--disabled) {
+    padding-top: 1px;
+  }
 
-    &.Button--micro .Icon, &:link.Button--micro .Icon {
-        height: 11px;
-        width: 11px;
-    }
+  &:not(.Button--disabled):hover, &.Button--micro:not(.Button--disabled):hover {
+    background: rgba(12, 12, 13, .2);
+  }
 
-    &.Button--micro:active:not(.Button--disabled), &:link.Button--micro:active:not(.Button--disabled) {
-        padding-top: 1px;
-    }
+  &:not(.Button--disabled):active:not(.Button--disabled), &.Button--micro:not(.Button--disabled):active:not(.Button--disabled) {
+    background: rgba(12, 12, 13, .3);
+    padding-top: 1px;
+  }
 
-    &:not(.Button--disabled):hover, &.Button--micro:not(.Button--disabled):hover {
-        background: rgba(12, 12, 13, 0.2);
-    }
+  &:focus {
+    box-shadow: inset 0 0 2px 0 #0a84ff, 0 0 3px 0 rgba(10, 132, 255, .7);
+    outline: none;
+  }
 
-    &:not(.Button--disabled):active:not(.Button--disabled), &.Button--micro:not(.Button--disabled):active:not(.Button--disabled) {
-        background: rgba(12, 12, 13, 0.3);
-        padding-top: 1px;
-    }
+  &.Button--disabled {
+    cursor: not-allowed;
+    opacity: .4;
+  }
 
-    &:focus {
-        box-shadow: inset 0 0 2px 0 #0a84ff, 0 0 3px 0 rgba(10, 132, 255, 0.7);
-        outline: none;
-    }
-
-    &.Button--disabled {
-        cursor: not-allowed;
-        opacity: 0.4;
-    }
-
-    &::-moz-focus-inner {
-        border: 0;
-        padding: 0;
-    }
+  &::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+  }
 }
 
 [dir=ltr] .Button--neutral .Icon {
-    margin-right: 6px;
+  margin-right: 6px;
 }
 
 [dir=rtl] .Button--neutral .Icon {
-    margin-left: 6px;
+  margin-left: 6px;
 }
 
 [dir=ltr] .Button--neutral.Button--puffy .Icon, [dir=ltr] .Button--neutral:link.Button--puffy .Icon {
-    margin-right: 8px;
+  margin-right: 8px;
 }
 
 [dir=rtl] .Button--neutral.Button--puffy .Icon, [dir=rtl] .Button--neutral:link.Button--puffy .Icon {
-    margin-left: 8px;
+  margin-left: 8px;
 }
 
 [dir=ltr] .Button--neutral.Button--micro .Icon, [dir=ltr] .Button--neutral:link.Button--micro .Icon {
-    margin-right: 4px;
+  margin-right: 4px;
 }
 
 [dir=rtl] .Button--neutral.Button--micro .Icon, [dir=rtl] .Button--neutral:link.Button--micro .Icon {
-    margin-left: 4px;
+  margin-left: 4px;
 }
 
 /* Button >> Light */
 .Button--light {
-    font-family: "Fira Sans", sans-serif;
-    font-style: normal;
+  align-items: center;
+  background: #ffffff;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "Fira Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  height: 32px;
+  justify-content: center;
+  line-height: 1.3;
+  margin: 0;
+  padding: 0 8px;
+  text-decoration: none;
+  transition-duration: all 1050ms, padding 150ms;
+  transition-property: background-color border-color color;
+  transition-timing-function: cubic-bezier(.07, .95, 0, 1);
+
+  & .Icon {
+    height: 13px;
+    width: 13px;
+  }
+
+  &, &:link {
+    color: #343a40;
+    font-size: 14px;
     font-weight: 400;
-    align-items: center;
-    background: #fff;
-    border: 1px solid transparent;
-    border-radius: 2px;
-    cursor: pointer;
-    display: inline-flex;
-    height: 32px;
-    justify-content: center;
-    line-height: 1.3;
-    margin: 0;
-    padding: 0 8px;
-    text-decoration: none;
-    transition-duration: all 1050ms, padding 150ms;
-    transition-property: background-color border-color color;
-    transition-timing-function: cubic-bezier(0.07, 0.95, 0, 1);
+  }
 
-    & .Icon {
-        height: 13px;
-        width: 13px;
-    }
+  &.Button--puffy, &:link.Button--puffy {
+    border-radius: 4px;
+    font-size: 15px;
+    height: 48px;
+    padding: 0 16px;
+  }
 
-    &, &:link {
-        color: #343a40;
-        font-size: 14px;
-        font-weight: 400;
-    }
+  &.Button--puffy .Icon, &:link.Button--puffy .Icon {
+    height: 15px;
+    width: 15px;
+  }
 
-    &.Button--puffy, &:link.Button--puffy {
-        border-radius: 4px;
-        font-size: 15px;
-        height: 48px;
-        padding: 0 16px;
-    }
+  &.Button--micro, &:link.Button--micro {
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .5);
+  }
 
-    &.Button--puffy .Icon, &:link.Button--puffy .Icon {
-        height: 15px;
-        width: 15px;
-    }
+  &.Button--micro, &.Button--micro:link, &:link.Button--micro, &:link.Button--micro:link {
+    font-size: 11px;
+    height: 24px;
+  }
 
-    &.Button--micro, &:link.Button--micro {
-        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
-    }
+  &.Button--micro .Icon, &:link.Button--micro .Icon {
+    height: 11px;
+    width: 11px;
+  }
 
-    &.Button--micro, &.Button--micro:link, &:link.Button--micro, &:link.Button--micro:link {
-        font-size: 11px;
-        height: 24px;
-    }
+  &.Button--micro:active:not(.Button--disabled), &:link.Button--micro:active:not(.Button--disabled) {
+    padding-top: 1px;
+  }
 
-    &.Button--micro .Icon, &:link.Button--micro .Icon {
-        height: 11px;
-        width: 11px;
-    }
+  &:not(.Button--disabled):hover, &.Button--micro:not(.Button--disabled):hover {
+    background: #ededf0;
+  }
 
-    &.Button--micro:active:not(.Button--disabled), &:link.Button--micro:active:not(.Button--disabled) {
-        padding-top: 1px;
-    }
+  &:not(.Button--disabled):active:not(.Button--disabled), &.Button--micro:not(.Button--disabled):active:not(.Button--disabled) {
+    background: #f9f9fa;
+    padding-top: 1px;
+  }
 
-    &:not(.Button--disabled):hover, &.Button--micro:not(.Button--disabled):hover {
-        background: #ededf0;
-    }
+  &:focus {
+    box-shadow: inset 0 0 2px 0 #0a84ff, 0 0 3px 0 rgba(10, 132, 255, .7);
+    outline: none;
+  }
 
-    &:not(.Button--disabled):active:not(.Button--disabled), &.Button--micro:not(.Button--disabled):active:not(.Button--disabled) {
-        background: #f9f9fa;
-        padding-top: 1px;
-    }
+  &.Button--disabled {
+    cursor: not-allowed;
+    opacity: .4;
+  }
 
-    &:focus {
-        box-shadow: inset 0 0 2px 0 #0a84ff, 0 0 3px 0 rgba(10, 132, 255, 0.7);
-        outline: none;
-    }
-
-    &.Button--disabled {
-        cursor: not-allowed;
-        opacity: 0.4;
-    }
-
-    &::-moz-focus-inner {
-        border: 0;
-        padding: 0;
-    }
+  &::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+  }
 }
 
 [dir=ltr] .Button--light .Icon {
-    margin-right: 6px;
+  margin-right: 6px;
 }
 
 [dir=rtl] .Button--light .Icon {
-    margin-left: 6px;
+  margin-left: 6px;
 }
 
 [dir=ltr] .Button--light.Button--puffy .Icon, [dir=ltr] .Button--light:link.Button--puffy .Icon {
-    margin-right: 8px;
+  margin-right: 8px;
 }
 
 [dir=rtl] .Button--light.Button--puffy .Icon, [dir=rtl] .Button--light:link.Button--puffy .Icon {
-    margin-left: 8px;
+  margin-left: 8px;
 }
 
 [dir=ltr] .Button--light.Button--micro .Icon, [dir=ltr] .Button--light:link.Button--micro .Icon {
-    margin-right: 4px;
+  margin-right: 4px;
 }
 
 [dir=rtl] .Button--light.Button--micro .Icon, [dir=rtl] .Button--light:link.Button--micro .Icon {
-    margin-left: 4px;
+  margin-left: 4px;
 }
 
 /* Button >> Action */
 .Button--action {
-    font-family: "Fira Sans", sans-serif;
-    font-style: normal;
+  align-items: center;
+  background: #0a84ff;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "Fira Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  height: 32px;
+  justify-content: center;
+  line-height: 1.3;
+  margin: 0;
+  padding: 0 8px;
+  text-decoration: none;
+  transition-duration: all 1050ms, padding 150ms;
+  transition-property: background-color border-color color;
+  transition-timing-function: cubic-bezier(.07, .95, 0, 1);
+
+  & .Icon {
+    height: 13px;
+    width: 13px;
+  }
+
+  &, &:link {
+    color: #ffffff;
+    font-size: 14px;
     font-weight: 400;
-    align-items: center;
-    background: #0a84ff;
-    border: 1px solid transparent;
-    border-radius: 2px;
-    cursor: pointer;
-    display: inline-flex;
-    height: 32px;
-    justify-content: center;
-    line-height: 1.3;
-    margin: 0;
-    padding: 0 8px;
-    text-decoration: none;
-    transition-duration: all 1050ms, padding 150ms;
-    transition-property: background-color border-color color;
-    transition-timing-function: cubic-bezier(0.07, 0.95, 0, 1);
+  }
 
-    & .Icon {
-        height: 13px;
-        width: 13px;
-    }
+  &.Button--puffy, &:link.Button--puffy {
+    border-radius: 4px;
+    font-size: 15px;
+    height: 48px;
+    padding: 0 16px;
+  }
 
-    &, &:link {
-        color: #fff;
-        font-size: 14px;
-        font-weight: 400;
-    }
+  &.Button--puffy .Icon, &:link.Button--puffy .Icon {
+    height: 15px;
+    width: 15px;
+  }
 
-    &.Button--puffy, &:link.Button--puffy {
-        border-radius: 4px;
-        font-size: 15px;
-        height: 48px;
-        padding: 0 16px;
-    }
+  &.Button--micro, &:link.Button--micro {
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .5);
+  }
 
-    &.Button--puffy .Icon, &:link.Button--puffy .Icon {
-        height: 15px;
-        width: 15px;
-    }
+  &.Button--micro, &.Button--micro:link, &:link.Button--micro, &:link.Button--micro:link {
+    font-size: 11px;
+    height: 24px;
+  }
 
-    &.Button--micro, &:link.Button--micro {
-        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
-    }
+  &.Button--micro .Icon, &:link.Button--micro .Icon {
+    height: 11px;
+    width: 11px;
+  }
 
-    &.Button--micro, &.Button--micro:link, &:link.Button--micro, &:link.Button--micro:link {
-        font-size: 11px;
-        height: 24px;
-    }
+  &.Button--micro:active:not(.Button--disabled), &:link.Button--micro:active:not(.Button--disabled) {
+    padding-top: 1px;
+  }
 
-    &.Button--micro .Icon, &:link.Button--micro .Icon {
-        height: 11px;
-        width: 11px;
-    }
+  &:not(.Button--disabled):hover, &.Button--micro:not(.Button--disabled):hover {
+    background: #003eaa;
+  }
 
-    &.Button--micro:active:not(.Button--disabled), &:link.Button--micro:active:not(.Button--disabled) {
-        padding-top: 1px;
-    }
+  &:not(.Button--disabled):active:not(.Button--disabled), &.Button--micro:not(.Button--disabled):active:not(.Button--disabled) {
+    background: #0060df;
+    padding-top: 1px;
+  }
 
-    &:not(.Button--disabled):hover, &.Button--micro:not(.Button--disabled):hover {
-        background: #003eaa;
-    }
+  &:focus {
+    box-shadow: inset 0 0 2px 0 #0a84ff, 0 0 3px 0 rgba(10, 132, 255, .7);
+    outline: none;
+  }
 
-    &:not(.Button--disabled):active:not(.Button--disabled), &.Button--micro:not(.Button--disabled):active:not(.Button--disabled) {
-        background: #0060df;
-        padding-top: 1px;
-    }
+  &.Button--disabled {
+    cursor: not-allowed;
+    opacity: .4;
+  }
 
-    &:focus {
-        box-shadow: inset 0 0 2px 0 #0a84ff, 0 0 3px 0 rgba(10, 132, 255, 0.7);
-        outline: none;
-    }
-
-    &.Button--disabled {
-        cursor: not-allowed;
-        opacity: 0.4;
-    }
-
-    &::-moz-focus-inner {
-        border: 0;
-        padding: 0;
-    }
+  &::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+  }
 }
 
 [dir=ltr] .Button--action .Icon {
-    margin-right: 6px;
+  margin-right: 6px;
 }
 
 [dir=rtl] .Button--action .Icon {
-    margin-left: 6px;
+  margin-left: 6px;
 }
 
 [dir=ltr] .Button--action.Button--puffy .Icon, [dir=ltr] .Button--action:link.Button--puffy .Icon {
-    margin-right: 8px;
+  margin-right: 8px;
 }
 
 [dir=rtl] .Button--action.Button--puffy .Icon, [dir=rtl] .Button--action:link.Button--puffy .Icon {
-    margin-left: 8px;
+  margin-left: 8px;
 }
 
 [dir=ltr] .Button--action.Button--micro .Icon, [dir=ltr] .Button--action:link.Button--micro .Icon {
-    margin-right: 4px;
+  margin-right: 4px;
 }
 
 [dir=rtl] .Button--action.Button--micro .Icon, [dir=rtl] .Button--action:link.Button--micro .Icon {
-    margin-left: 4px;
+  margin-left: 4px;
 }
 
 /* Button >> Confirm */
 .Button--confirm {
-    font-family: "Fira Sans", sans-serif;
-    font-style: normal;
+  align-items: center;
+  background: #12bc00;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "Fira Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  height: 32px;
+  justify-content: center;
+  line-height: 1.3;
+  margin: 0;
+  padding: 0 8px;
+  text-decoration: none;
+  transition-duration: all 1050ms, padding 150ms;
+  transition-property: background-color border-color color;
+  transition-timing-function: cubic-bezier(.07, .95, 0, 1);
+
+  & .Icon {
+    height: 13px;
+    width: 13px;
+  }
+
+  &, &:link {
+    color: #ffffff;
+    font-size: 14px;
     font-weight: 400;
-    align-items: center;
-    background: #12bc00;
-    border: 1px solid transparent;
-    border-radius: 2px;
-    cursor: pointer;
-    display: inline-flex;
-    height: 32px;
-    justify-content: center;
-    line-height: 1.3;
-    margin: 0;
-    padding: 0 8px;
-    text-decoration: none;
-    transition-duration: all 1050ms, padding 150ms;
-    transition-property: background-color border-color color;
-    transition-timing-function: cubic-bezier(0.07, 0.95, 0, 1);
+  }
 
-    & .Icon {
-        height: 13px;
-        width: 13px;
-    }
+  &.Button--puffy, &:link.Button--puffy {
+    border-radius: 4px;
+    font-size: 15px;
+    height: 48px;
+    padding: 0 16px;
+  }
 
-    &, &:link {
-        color: #fff;
-        font-size: 14px;
-        font-weight: 400;
-    }
+  &.Button--puffy .Icon, &:link.Button--puffy .Icon {
+    height: 15px;
+    width: 15px;
+  }
 
-    &.Button--puffy, &:link.Button--puffy {
-        border-radius: 4px;
-        font-size: 15px;
-        height: 48px;
-        padding: 0 16px;
-    }
+  &.Button--micro, &:link.Button--micro {
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .5);
+  }
 
-    &.Button--puffy .Icon, &:link.Button--puffy .Icon {
-        height: 15px;
-        width: 15px;
-    }
+  &.Button--micro, &.Button--micro:link, &:link.Button--micro, &:link.Button--micro:link {
+    font-size: 11px;
+    height: 24px;
+  }
 
-    &.Button--micro, &:link.Button--micro {
-        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
-    }
+  &.Button--micro .Icon, &:link.Button--micro .Icon {
+    height: 11px;
+    width: 11px;
+  }
 
-    &.Button--micro, &.Button--micro:link, &:link.Button--micro, &:link.Button--micro:link {
-        font-size: 11px;
-        height: 24px;
-    }
+  &.Button--micro:active:not(.Button--disabled), &:link.Button--micro:active:not(.Button--disabled) {
+    padding-top: 1px;
+  }
 
-    &.Button--micro .Icon, &:link.Button--micro .Icon {
-        height: 11px;
-        width: 11px;
-    }
+  &:not(.Button--disabled):hover, &.Button--micro:not(.Button--disabled):hover {
+    background: #006504;
+  }
 
-    &.Button--micro:active:not(.Button--disabled), &:link.Button--micro:active:not(.Button--disabled) {
-        padding-top: 1px;
-    }
+  &:not(.Button--disabled):active:not(.Button--disabled), &.Button--micro:not(.Button--disabled):active:not(.Button--disabled) {
+    background: #058b00;
+    padding-top: 1px;
+  }
 
-    &:not(.Button--disabled):hover, &.Button--micro:not(.Button--disabled):hover {
-        background: #006504;
-    }
+  &:focus {
+    box-shadow: inset 0 0 2px 0 #0a84ff, 0 0 3px 0 rgba(10, 132, 255, .7);
+    outline: none;
+  }
 
-    &:not(.Button--disabled):active:not(.Button--disabled), &.Button--micro:not(.Button--disabled):active:not(.Button--disabled) {
-        background: #058b00;
-        padding-top: 1px;
-    }
+  &.Button--disabled {
+    cursor: not-allowed;
+    opacity: .4;
+  }
 
-    &:focus {
-        box-shadow: inset 0 0 2px 0 #0a84ff, 0 0 3px 0 rgba(10, 132, 255, 0.7);
-        outline: none;
-    }
-
-    &.Button--disabled {
-        cursor: not-allowed;
-        opacity: 0.4;
-    }
-
-    &::-moz-focus-inner {
-        border: 0;
-        padding: 0;
-    }
+  &::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+  }
 }
 
 [dir=ltr] .Button--confirm .Icon {
-    margin-right: 6px;
+  margin-right: 6px;
 }
 
 [dir=rtl] .Button--confirm .Icon {
-    margin-left: 6px;
+  margin-left: 6px;
 }
 
 [dir=ltr] .Button--confirm.Button--puffy .Icon, [dir=ltr] .Button--confirm:link.Button--puffy .Icon {
-    margin-right: 8px;
+  margin-right: 8px;
 }
 
 [dir=rtl] .Button--confirm.Button--puffy .Icon, [dir=rtl] .Button--confirm:link.Button--puffy .Icon {
-    margin-left: 8px;
+  margin-left: 8px;
 }
 
 [dir=ltr] .Button--confirm.Button--micro .Icon, [dir=ltr] .Button--confirm:link.Button--micro .Icon {
-    margin-right: 4px;
+  margin-right: 4px;
 }
 
 [dir=rtl] .Button--confirm.Button--micro .Icon, [dir=rtl] .Button--confirm:link.Button--micro .Icon {
-    margin-left: 4px;
+  margin-left: 4px;
 }
 
 /* Button >> Warning */
 .Button--warning {
-    font-family: "Fira Sans", sans-serif;
-    font-style: normal;
+  align-items: center;
+  background: #ffe900;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "Fira Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  height: 32px;
+  justify-content: center;
+  line-height: 1.3;
+  margin: 0;
+  padding: 0 8px;
+  text-decoration: none;
+  transition-duration: all 1050ms, padding 150ms;
+  transition-property: background-color border-color color;
+  transition-timing-function: cubic-bezier(.07, .95, 0, 1);
+
+  & .Icon {
+    height: 13px;
+    width: 13px;
+  }
+
+  &, &:link {
+    color: #ffffff;
+    font-size: 14px;
     font-weight: 400;
-    align-items: center;
-    background: #ffe900;
-    border: 1px solid transparent;
-    border-radius: 2px;
-    cursor: pointer;
-    display: inline-flex;
-    height: 32px;
-    justify-content: center;
-    line-height: 1.3;
-    margin: 0;
-    padding: 0 8px;
-    text-decoration: none;
-    transition-duration: all 1050ms, padding 150ms;
-    transition-property: background-color border-color color;
-    transition-timing-function: cubic-bezier(0.07, 0.95, 0, 1);
+  }
 
-    & .Icon {
-        height: 13px;
-        width: 13px;
-    }
+  &.Button--puffy, &:link.Button--puffy {
+    border-radius: 4px;
+    font-size: 15px;
+    height: 48px;
+    padding: 0 16px;
+  }
 
-    &, &:link {
-        color: #fff;
-        font-size: 14px;
-        font-weight: 400;
-    }
+  &.Button--puffy .Icon, &:link.Button--puffy .Icon {
+    height: 15px;
+    width: 15px;
+  }
 
-    &.Button--puffy, &:link.Button--puffy {
-        border-radius: 4px;
-        font-size: 15px;
-        height: 48px;
-        padding: 0 16px;
-    }
+  &.Button--micro, &:link.Button--micro {
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .5);
+  }
 
-    &.Button--puffy .Icon, &:link.Button--puffy .Icon {
-        height: 15px;
-        width: 15px;
-    }
+  &.Button--micro, &.Button--micro:link, &:link.Button--micro, &:link.Button--micro:link {
+    font-size: 11px;
+    height: 24px;
+  }
 
-    &.Button--micro, &:link.Button--micro {
-        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
-    }
+  &.Button--micro .Icon, &:link.Button--micro .Icon {
+    height: 11px;
+    width: 11px;
+  }
 
-    &.Button--micro, &.Button--micro:link, &:link.Button--micro, &:link.Button--micro:link {
-        font-size: 11px;
-        height: 24px;
-    }
+  &.Button--micro:active:not(.Button--disabled), &:link.Button--micro:active:not(.Button--disabled) {
+    padding-top: 1px;
+  }
 
-    &.Button--micro .Icon, &:link.Button--micro .Icon {
-        height: 11px;
-        width: 11px;
-    }
+  &:not(.Button--disabled):hover, &.Button--micro:not(.Button--disabled):hover {
+    background: #a47f00;
+  }
 
-    &.Button--micro:active:not(.Button--disabled), &:link.Button--micro:active:not(.Button--disabled) {
-        padding-top: 1px;
-    }
+  &:not(.Button--disabled):active:not(.Button--disabled), &.Button--micro:not(.Button--disabled):active:not(.Button--disabled) {
+    background: #d7b600;
+    padding-top: 1px;
+  }
 
-    &:not(.Button--disabled):hover, &.Button--micro:not(.Button--disabled):hover {
-        background: #a47f00;
-    }
+  &:focus {
+    box-shadow: inset 0 0 2px 0 #0a84ff, 0 0 3px 0 rgba(10, 132, 255, .7);
+    outline: none;
+  }
 
-    &:not(.Button--disabled):active:not(.Button--disabled), &.Button--micro:not(.Button--disabled):active:not(.Button--disabled) {
-        background: #d7b600;
-        padding-top: 1px;
-    }
+  &.Button--disabled {
+    cursor: not-allowed;
+    opacity: .4;
+  }
 
-    &:focus {
-        box-shadow: inset 0 0 2px 0 #0a84ff, 0 0 3px 0 rgba(10, 132, 255, 0.7);
-        outline: none;
-    }
-
-    &.Button--disabled {
-        cursor: not-allowed;
-        opacity: 0.4;
-    }
-
-    &::-moz-focus-inner {
-        border: 0;
-        padding: 0;
-    }
+  &::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+  }
 }
 
 [dir=ltr] .Button--warning .Icon {
-    margin-right: 6px;
+  margin-right: 6px;
 }
 
 [dir=rtl] .Button--warning .Icon {
-    margin-left: 6px;
+  margin-left: 6px;
 }
 
 [dir=ltr] .Button--warning.Button--puffy .Icon, [dir=ltr] .Button--warning:link.Button--puffy .Icon {
-    margin-right: 8px;
+  margin-right: 8px;
 }
 
 [dir=rtl] .Button--warning.Button--puffy .Icon, [dir=rtl] .Button--warning:link.Button--puffy .Icon {
-    margin-left: 8px;
+  margin-left: 8px;
 }
 
 [dir=ltr] .Button--warning.Button--micro .Icon, [dir=ltr] .Button--warning:link.Button--micro .Icon {
-    margin-right: 4px;
+  margin-right: 4px;
 }
 
 [dir=rtl] .Button--warning.Button--micro .Icon, [dir=rtl] .Button--warning:link.Button--micro .Icon {
-    margin-left: 4px;
+  margin-left: 4px;
 }
 
 /* Button >> Alert */
 .Button--alert {
-    font-family: "Fira Sans", sans-serif;
-    font-style: normal;
+  align-items: center;
+  background: #ff0039;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "Fira Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  height: 32px;
+  justify-content: center;
+  line-height: 1.3;
+  margin: 0;
+  padding: 0 8px;
+  text-decoration: none;
+  transition-duration: all 1050ms, padding 150ms;
+  transition-property: background-color border-color color;
+  transition-timing-function: cubic-bezier(.07, .95, 0, 1);
+
+  & .Icon {
+    height: 13px;
+    width: 13px;
+  }
+
+  &, &:link {
+    color: #ffffff;
+    font-size: 14px;
     font-weight: 400;
-    align-items: center;
-    background: #ff0039;
-    border: 1px solid transparent;
-    border-radius: 2px;
-    cursor: pointer;
-    display: inline-flex;
-    height: 32px;
-    justify-content: center;
-    line-height: 1.3;
-    margin: 0;
-    padding: 0 8px;
-    text-decoration: none;
-    transition-duration: all 1050ms, padding 150ms;
-    transition-property: background-color border-color color;
-    transition-timing-function: cubic-bezier(0.07, 0.95, 0, 1);
+  }
 
-    & .Icon {
-        height: 13px;
-        width: 13px;
-    }
+  &.Button--puffy, &:link.Button--puffy {
+    border-radius: 4px;
+    font-size: 15px;
+    height: 48px;
+    padding: 0 16px;
+  }
 
-    &, &:link {
-        color: #fff;
-        font-size: 14px;
-        font-weight: 400;
-    }
+  &.Button--puffy .Icon, &:link.Button--puffy .Icon {
+    height: 15px;
+    width: 15px;
+  }
 
-    &.Button--puffy, &:link.Button--puffy {
-        border-radius: 4px;
-        font-size: 15px;
-        height: 48px;
-        padding: 0 16px;
-    }
+  &.Button--micro, &:link.Button--micro {
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .5);
+  }
 
-    &.Button--puffy .Icon, &:link.Button--puffy .Icon {
-        height: 15px;
-        width: 15px;
-    }
+  &.Button--micro, &.Button--micro:link, &:link.Button--micro, &:link.Button--micro:link {
+    font-size: 11px;
+    height: 24px;
+  }
 
-    &.Button--micro, &:link.Button--micro {
-        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
-    }
+  &.Button--micro .Icon, &:link.Button--micro .Icon {
+    height: 11px;
+    width: 11px;
+  }
 
-    &.Button--micro, &.Button--micro:link, &:link.Button--micro, &:link.Button--micro:link {
-        font-size: 11px;
-        height: 24px;
-    }
+  &.Button--micro:active:not(.Button--disabled), &:link.Button--micro:active:not(.Button--disabled) {
+    padding-top: 1px;
+  }
 
-    &.Button--micro .Icon, &:link.Button--micro .Icon {
-        height: 11px;
-        width: 11px;
-    }
+  &:not(.Button--disabled):hover, &.Button--micro:not(.Button--disabled):hover {
+    background: #a4000f;
+  }
 
-    &.Button--micro:active:not(.Button--disabled), &:link.Button--micro:active:not(.Button--disabled) {
-        padding-top: 1px;
-    }
+  &:not(.Button--disabled):active:not(.Button--disabled), &.Button--micro:not(.Button--disabled):active:not(.Button--disabled) {
+    background: #d70022;
+    padding-top: 1px;
+  }
 
-    &:not(.Button--disabled):hover, &.Button--micro:not(.Button--disabled):hover {
-        background: #a4000f;
-    }
+  &:focus {
+    box-shadow: inset 0 0 2px 0 #0a84ff, 0 0 3px 0 rgba(10, 132, 255, .7);
+    outline: none;
+  }
 
-    &:not(.Button--disabled):active:not(.Button--disabled), &.Button--micro:not(.Button--disabled):active:not(.Button--disabled) {
-        background: #d70022;
-        padding-top: 1px;
-    }
+  &.Button--disabled {
+    cursor: not-allowed;
+    opacity: .4;
+  }
 
-    &:focus {
-        box-shadow: inset 0 0 2px 0 #0a84ff, 0 0 3px 0 rgba(10, 132, 255, 0.7);
-        outline: none;
-    }
-
-    &.Button--disabled {
-        cursor: not-allowed;
-        opacity: 0.4;
-    }
-
-    &::-moz-focus-inner {
-        border: 0;
-        padding: 0;
-    }
+  &::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+  }
 }
 
 [dir=ltr] .Button--alert .Icon {
-    margin-right: 6px;
+  margin-right: 6px;
 }
 
 [dir=rtl] .Button--alert .Icon {
-    margin-left: 6px;
+  margin-left: 6px;
 }
 
 [dir=ltr] .Button--alert.Button--puffy .Icon, [dir=ltr] .Button--alert:link.Button--puffy .Icon {
-    margin-right: 8px;
+  margin-right: 8px;
 }
 
 [dir=rtl] .Button--alert.Button--puffy .Icon, [dir=rtl] .Button--alert:link.Button--puffy .Icon {
-    margin-left: 8px;
+  margin-left: 8px;
 }
 
 [dir=ltr] .Button--alert.Button--micro .Icon, [dir=ltr] .Button--alert:link.Button--micro .Icon {
-    margin-right: 4px;
+  margin-right: 4px;
 }
 
 [dir=rtl] .Button--alert.Button--micro .Icon, [dir=rtl] .Button--alert:link.Button--micro .Icon {
-    margin-left: 4px;
+  margin-left: 4px;
 }

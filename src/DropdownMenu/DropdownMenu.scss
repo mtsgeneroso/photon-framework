@@ -1,0 +1,136 @@
+
+/* Firefox Colors SCSS Variables v1.3.0 */
+
+/* Font mixins. Changes here affect *all* apps */
+
+/* Shared mixins. Bear in mind changes here impact *all* apps. */
+
+/* Firefox Colors SCSS Variables v1.3.0 */
+.DropdownMenu {
+  display: inline-block;
+  height: 27px;
+  padding-bottom: 2px;
+  padding-top: 4px;
+  position: relative;
+  text-align: left;
+}
+
+[dir=rtl] .DropdownMenu {
+  text-align: right;
+}
+
+@media (min-width: 500px) {
+  .DropdownMenu {
+    height: auto;
+    padding-bottom: 6px;
+  }
+}
+
+.DropdownMenu-button:focus {
+  outline: 1px dotted #ffffff;
+  outline: auto 5px -webkit-focus-ring-color;
+}
+
+.DropdownMenu-button .DropdownMenu-button-text {
+  color: #ffffff;
+  display: inline-block;
+  font-family: "Fira Sans", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  font-weight: normal;
+  max-width: 100px;
+  overflow: hidden;
+  text-decoration: none;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@media (min-width: 500px) {
+  .DropdownMenu-button .DropdownMenu-button-text {
+    max-width: 200px;
+  }
+}
+
+@media (min-width: 900px) {
+  .DropdownMenu-button .DropdownMenu-button-text {
+    max-width: 300px;
+  }
+}
+
+.DropdownMenu-button .Icon-inverted-caret {
+  display: inline-block;
+  opacity: .6;
+  -webkit-transition: opacity 150ms ease-in-out;
+  transition: opacity 150ms ease-in-out;
+  width: 9px;
+}
+
+[dir=ltr] .DropdownMenu-button .Icon-inverted-caret {
+  margin-left: 5px;
+}
+
+[dir=rtl] .DropdownMenu-button .Icon-inverted-caret {
+  margin-right: 5px;
+}
+
+.DropdownMenu--active .DropdownMenu-button .Icon-inverted-caret {
+  opacity: 1;
+}
+
+.DropdownMenu-items {
+  background: #ffffff;
+  border: 0;
+  border-radius: 9px;
+  -webkit-box-shadow: 0 0 2px rgba(52, 58, 64, .5);
+  box-shadow: 0 0 2px rgba(52, 58, 64, .5);
+  display: none;
+  font-family: "Fira Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  left: auto;
+  list-style-type: none;
+  margin: 0;
+  max-width: 245px;
+  padding: 4px 24px 20px;
+  position: absolute;
+  right: 0;
+  top: 30px;
+  white-space: nowrap;
+  width: auto;
+  z-index: 10;
+}
+
+[dir=rtl] .DropdownMenu-items {
+  left: 0;
+  right: auto;
+}
+
+.DropdownMenu-items::after {
+  background-color: #ffffff;
+  content: "";
+  display: block;
+  height: 8px;
+  left: auto;
+  position: absolute;
+  right: 36px;
+  top: -4px;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  width: 8px;
+}
+
+[dir=rtl] .DropdownMenu-items::after {
+  left: 36px;
+  right: auto;
+}
+
+.DropdownMenu--active .DropdownMenu-items {
+  display: block;
+}
+
+@media (min-width: 900px) {
+  .DropdownMenu-items {
+    max-width: 300px;
+  }
+}

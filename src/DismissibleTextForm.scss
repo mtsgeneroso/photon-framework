@@ -1,0 +1,49 @@
+.DismissibleTextForm-form {
+  margin: 6px 0;
+}
+
+@media (min-width: 500px) {
+  .DismissibleTextForm-form {
+    margin: 12px 0;
+  }
+}
+
+.DismissibleTextForm-buttons {
+  -webkit-box-pack: justify;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-top: 6px;
+}
+
+@media (min-width: 500px) {
+  .DismissibleTextForm-buttons {
+    margin-top: 24px;
+  }
+}
+
+.DismissibleTextForm-dismiss {
+  align-self: center;
+  -ms-flex-item-align: center;
+}
+
+.DismissibleTextForm-submit.disabled {
+  background-color: #72c3fc;
+  cursor: not-allowed;
+}
+
+.DismissibleTextForm-textarea {
+  margin: 0 auto;
+  min-height: 51px;
+  padding: 6px;
+  resize: none;
+  width: 100%;
+}
+
+@media (min-width: 500px) {
+  .DismissibleTextForm-textarea {
+    padding: 12px;
+  }
+}

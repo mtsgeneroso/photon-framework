@@ -1,0 +1,203 @@
+/* Firefox Colors SCSS Variables v1.3.0 */
+
+/* Font mixins. Changes here affect *all* apps */
+
+/* Shared mixins. Bear in mind changes here impact *all* apps. */
+
+/* Firefox Colors SCSS Variables v1.3.0 */
+.TooltipMenu {
+  border: 0;
+  border-radius: 9px;
+  padding: 0 10px;
+  width: 100%;
+}
+
+@media (min-width: 500px) {
+  .TooltipMenu {
+    padding: 0;
+    width: 320px;
+  }
+}
+
+.TooltipMenu-opener {
+  color: #0a84ff;
+  cursor: pointer;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+.TooltipMenu-arrow {
+  background-color: #ffffff;
+  -webkit-box-shadow: 0 0 2px rgba(52, 58, 64, .5);
+  box-shadow: 0 0 2px rgba(52, 58, 64, .5);
+  display: block;
+  height: 8px;
+  left: 50%;
+  position: absolute;
+  top: -4px;
+  -webkit-transform: translateX(-50%) rotate(45deg);
+  transform: translateX(-50%) rotate(45deg);
+  width: 8px;
+  z-index: 1;
+}
+
+.TooltipMenu-inner {
+  border-radius: 9px;
+  -webkit-box-shadow: 0 0 2px rgba(52, 58, 64, .5);
+  box-shadow: 0 0 2px rgba(52, 58, 64, .5);
+}
+
+.TooltipMenu-list,
+.CardList .TooltipMenu-list {
+  background: #ffffff;
+  border-radius: 9px;
+  list-style-type: none;
+  margin: 0;
+  padding: 6px;
+  position: relative;
+  z-index: 2;
+}
+
+.TooltipMenu-list .ListItem,
+.TooltipMenu-list .CardList .ListItem,
+.CardList .TooltipMenu-list .ListItem,
+.CardList .TooltipMenu-list .CardList .ListItem {
+  background: none;
+  margin: 0;
+  padding: 6px;
+  padding-top: 0;
+}
+
+.TooltipMenu-list .ListItem:first-child,
+.TooltipMenu-list .CardList .ListItem:first-child,
+.CardList .TooltipMenu-list .ListItem:first-child,
+.CardList .TooltipMenu-list .CardList .ListItem:first-child {
+  padding-top: 6px;
+}
+
+.TooltipMenu-list .ListItem,
+.TooltipMenu-list .ListItem a,
+.TooltipMenu-list .ListItem a:link,
+.TooltipMenu-list .ListItem button,
+.TooltipMenu-list .CardList .ListItem,
+.TooltipMenu-list .CardList .ListItem a,
+.TooltipMenu-list .CardList .ListItem a:link,
+.TooltipMenu-list .CardList .ListItem button,
+.CardList .TooltipMenu-list .ListItem,
+.CardList .TooltipMenu-list .ListItem a,
+.CardList .TooltipMenu-list .ListItem a:link,
+.CardList .TooltipMenu-list .ListItem button,
+.CardList .TooltipMenu-list .CardList .ListItem,
+.CardList .TooltipMenu-list .CardList .ListItem a,
+.CardList .TooltipMenu-list .CardList .ListItem a:link,
+.CardList .TooltipMenu-list .CardList .ListItem button {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.TooltipMenu-list .ListItem:not(.Button),
+.TooltipMenu-list .ListItem a:not(.Button),
+.TooltipMenu-list .ListItem a:link:not(.Button),
+.TooltipMenu-list .ListItem button:not(.Button),
+.TooltipMenu-list .CardList .ListItem:not(.Button),
+.TooltipMenu-list .CardList .ListItem a:not(.Button),
+.TooltipMenu-list .CardList .ListItem a:link:not(.Button),
+.TooltipMenu-list .CardList .ListItem button:not(.Button),
+.CardList .TooltipMenu-list .ListItem:not(.Button),
+.CardList .TooltipMenu-list .ListItem a:not(.Button),
+.CardList .TooltipMenu-list .ListItem a:link:not(.Button),
+.CardList .TooltipMenu-list .ListItem button:not(.Button),
+.CardList .TooltipMenu-list .CardList .ListItem:not(.Button),
+.CardList .TooltipMenu-list .CardList .ListItem a:not(.Button),
+.CardList .TooltipMenu-list .CardList .ListItem a:link:not(.Button),
+.CardList .TooltipMenu-list .CardList .ListItem button:not(.Button) {
+  color: #0c0c0d;
+  font-size: 14px;
+  line-height: 1.6;
+  text-align: left;
+}
+
+[dir=rtl] .TooltipMenu-list .ListItem:not(.Button), [dir=rtl]
+.TooltipMenu-list .ListItem a:not(.Button), [dir=rtl]
+.TooltipMenu-list .ListItem a:link:not(.Button), [dir=rtl]
+.TooltipMenu-list .ListItem button:not(.Button), [dir=rtl]
+.TooltipMenu-list .CardList .ListItem:not(.Button), [dir=rtl]
+.TooltipMenu-list .CardList .ListItem a:not(.Button), [dir=rtl]
+.TooltipMenu-list .CardList .ListItem a:link:not(.Button), [dir=rtl]
+.TooltipMenu-list .CardList .ListItem button:not(.Button), [dir=rtl]
+.CardList .TooltipMenu-list .ListItem:not(.Button), [dir=rtl]
+.CardList .TooltipMenu-list .ListItem a:not(.Button), [dir=rtl]
+.CardList .TooltipMenu-list .ListItem a:link:not(.Button), [dir=rtl]
+.CardList .TooltipMenu-list .ListItem button:not(.Button), [dir=rtl]
+.CardList .TooltipMenu-list .CardList .ListItem:not(.Button), [dir=rtl]
+.CardList .TooltipMenu-list .CardList .ListItem a:not(.Button), [dir=rtl]
+.CardList .TooltipMenu-list .CardList .ListItem a:link:not(.Button), [dir=rtl]
+.CardList .TooltipMenu-list .CardList .ListItem button:not(.Button) {
+  text-align: right;
+}
+
+.TooltipMenu-list .ListItem a:not(.Button),
+.TooltipMenu-list .ListItem a:link:not(.Button),
+.TooltipMenu-list .ListItem button:not(.Button),
+.TooltipMenu-list .CardList .ListItem a:not(.Button),
+.TooltipMenu-list .CardList .ListItem a:link:not(.Button),
+.TooltipMenu-list .CardList .ListItem button:not(.Button),
+.CardList .TooltipMenu-list .ListItem a:not(.Button),
+.CardList .TooltipMenu-list .ListItem a:link:not(.Button),
+.CardList .TooltipMenu-list .ListItem button:not(.Button),
+.CardList .TooltipMenu-list .CardList .ListItem a:not(.Button),
+.CardList .TooltipMenu-list .CardList .ListItem a:link:not(.Button),
+.CardList .TooltipMenu-list .CardList .ListItem button:not(.Button) {
+  cursor: pointer;
+  font-family: "Fira Sans", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+.TooltipMenu-list .ListItem a:hover:not(.Button),
+.TooltipMenu-list .ListItem a:focus:not(.Button),
+.TooltipMenu-list .ListItem a:active:not(.Button),
+.TooltipMenu-list .CardList .ListItem a:hover:not(.Button),
+.TooltipMenu-list .CardList .ListItem a:focus:not(.Button),
+.TooltipMenu-list .CardList .ListItem a:active:not(.Button),
+.CardList .TooltipMenu-list .ListItem a:hover:not(.Button),
+.CardList .TooltipMenu-list .ListItem a:focus:not(.Button),
+.CardList .TooltipMenu-list .ListItem a:active:not(.Button),
+.CardList .TooltipMenu-list .CardList .ListItem a:hover:not(.Button),
+.CardList .TooltipMenu-list .CardList .ListItem a:focus:not(.Button),
+.CardList .TooltipMenu-list .CardList .ListItem a:active:not(.Button) {
+  color: #0a84ff;
+}
+
+@media (min-width: 500px) {
+  .TooltipMenu-list .ListItem button:hover,
+  .TooltipMenu-list .ListItem button:focus,
+  .TooltipMenu-list .CardList .ListItem button:hover,
+  .TooltipMenu-list .CardList .ListItem button:focus,
+  .CardList .TooltipMenu-list .ListItem button:hover,
+  .CardList .TooltipMenu-list .ListItem button:focus,
+  .CardList .TooltipMenu-list .CardList .ListItem button:hover,
+  .CardList .TooltipMenu-list .CardList .ListItem button:focus {
+    color: #0a84ff;
+  }
+}
+
+.TooltipMenu-list .ListItem .ErrorList,
+.TooltipMenu-list .CardList .ListItem .ErrorList,
+.CardList .TooltipMenu-list .ListItem .ErrorList,
+.CardList .TooltipMenu-list .CardList .ListItem .ErrorList {
+  margin-bottom: 6px;
+}
+
+.TooltipMenu-list .ListItem .ErrorList-item,
+.TooltipMenu-list .CardList .ListItem .ErrorList-item,
+.CardList .TooltipMenu-list .ListItem .ErrorList-item,
+.CardList .TooltipMenu-list .CardList .ListItem .ErrorList-item {
+  white-space: normal;
+}

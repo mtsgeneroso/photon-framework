@@ -1,0 +1,48 @@
+.AddonDescription-more-addons {
+  margin-top: 0;
+}
+
+.AddonDescription-more-addons .Card-contents .AddonsCard-list {
+  background-color: #ffffff;
+  display: grid;
+  grid-auto-flow: initial;
+  grid-gap: 6px;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 0;
+  padding: 0;
+}
+
+.AddonDescription-more-addons .Card-contents .AddonsCard-list .SearchResult-metadata {
+  display: none;
+}
+
+@media (min-width: 720px) {
+  .AddonDescription-more-addons:not(.AddonDescription-more-addons--theme) .Card-contents .AddonsCard-list {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media (min-width: 1150px) {
+  .AddonDescription-more-addons:not(.AddonDescription-more-addons--theme) .Card-contents .AddonsCard-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.AddonDescription-more-addons--theme .Card-contents .AddonsCard-list .SearchResult-result {
+  width: 100%;
+}
+
+.AddonDescription-more-addons--theme .Card-contents .AddonsCard-list .SearchResult-icon-wrapper {
+  margin: 0 0 10px;
+  width: 100%;
+}
+
+.AddonDescription-more-addons--theme .Card-contents .AddonsCard-list .SearchResult-icon {
+  border-radius: 9px;
+}
+
+@media (min-width: 900px) {
+  .AddonDescription-more-addons--theme .Card-contents .AddonsCard-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

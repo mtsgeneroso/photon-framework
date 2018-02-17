@@ -1,0 +1,81 @@
+
+/* Firefox Colors SCSS Variables v1.3.0 */
+
+/* Firefox Colors SCSS Variables v1.3.0 */
+
+/* Font mixins. Changes here affect *all* apps */
+
+/* Shared mixins. Bear in mind changes here impact *all* apps. */
+.ExpandableCard-ToggleLink {
+  -webkit-box-pack: justify;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  text-decoration: none;
+}
+
+.ExpandableCard-ToggleLink:link {
+  color: #4a4a4f;
+}
+
+@media (min-width: 720px) {
+  .ExpandableCard-ToggleLink {
+    cursor: default;
+  }
+}
+
+.ExpandableCard-ToggleArrow {
+  -webkit-transition: all 70ms ease-out;
+  transition: all 70ms ease-out;
+}
+
+[dir=ltr] .ExpandableCard-ToggleArrow {
+  margin-right: 5px;
+}
+
+[dir=rtl] .ExpandableCard-ToggleArrow {
+  margin-left: 5px;
+}
+
+.ExpandableCard--expanded .ExpandableCard-ToggleArrow {
+  -webkit-transform: rotateX(180deg);
+  transform: rotateX(180deg);
+}
+
+@media (min-width: 720px) {
+  .ExpandableCard-ToggleArrow {
+    display: none;
+  }
+}
+
+.ExpandableCard .Card-header {
+  border-radius: 9px;
+}
+
+@media (min-width: 720px) {
+  .ExpandableCard .Card-header {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+}
+
+.ExpandableCard .Card-contents {
+  display: none;
+}
+
+@media (min-width: 720px) {
+  .ExpandableCard .Card-contents {
+    display: block;
+  }
+}
+
+.ExpandableCard--expanded .Card-header {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.ExpandableCard--expanded .Card-contents {
+  display: block;
+}

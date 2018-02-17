@@ -1,0 +1,51 @@
+
+/* Firefox Colors SCSS Variables v1.3.0 */
+
+/* Font mixins. Changes here affect *all* apps */
+
+/* Shared mixins. Bear in mind changes here impact *all* apps. */
+
+/* Firefox Colors SCSS Variables v1.3.0 */
+
+/* Firefox Colors SCSS Variables v1.3.0 */
+.DropdownMenuItem-section {
+  color: #737373;
+  font-size: 12px;
+  line-height: 1.6;
+  margin: 16px 0 0;
+}
+
+.DropdownMenuItem-link a,
+.DropdownMenuItem-link button {
+  font-family: "Fira Sans", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.DropdownMenuItem-link a, .DropdownMenuItem-link a:link,
+.DropdownMenuItem-link button,
+.DropdownMenuItem-link button:link {
+  color: #0c0c0d;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+.DropdownMenuItem-link a:hover, .DropdownMenuItem-link a:focus, .DropdownMenuItem-link a:active,
+.DropdownMenuItem-link button:hover,
+.DropdownMenuItem-link button:focus,
+.DropdownMenuItem-link button:active {
+  color: #0a84ff;
+}
+
+.DropdownMenuItem--detached {
+  margin-top: 8px;
+}
+
+.DropdownMenuItem {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

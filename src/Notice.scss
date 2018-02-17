@@ -1,0 +1,339 @@
+
+/* Firefox Colors SCSS Variables v1.3.0 */
+.Notice {
+  border-radius: 4px;
+  display: grid;
+  font-size: 12px;
+  grid-gap: 4px;
+  grid-template-columns: -webkit-min-content auto;
+  grid-template-columns: min-content auto;
+  line-height: 1.1;
+  padding: 4px;
+}
+
+.Notice-icon {
+  background-position: center top;
+  background-repeat: no-repeat;
+  margin: 4px;
+  min-height: 16px;
+  width: 16px;
+}
+
+.Notice-column {
+  align-items: center;
+  -webkit-box-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+}
+
+.Notice-text {
+  display: inline-block;
+  margin: 0;
+  padding: 4px 0;
+}
+
+[dir=ltr] .Notice-text {
+  padding-right: 8px;
+}
+
+[dir=rtl] .Notice-text {
+  padding-left: 8px;
+}
+
+.Notice-error {
+  background-color: #ff0039;
+}
+
+.Notice-error .Notice-button {
+  align-items: center;
+  background: #d70022;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  -webkit-box-align: center;
+  -webkit-box-pack: center;
+  cursor: pointer;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-align: center;
+  -ms-flex-pack: center;
+  font-family: "Fira Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  height: 32px;
+  justify-content: center;
+  line-height: 1.3;
+  margin: 0;
+  padding: 0 8px;
+  text-decoration: none;
+  -webkit-transition-duration: all 1050ms, padding 150ms;
+  transition-duration: all 1050ms, padding 150ms;
+  -webkit-transition-property: background-color border-color color;
+  transition-property: background-color border-color color;
+  -webkit-transition-timing-function: cubic-bezier(.07, .95, 0, 1);
+  transition-timing-function: cubic-bezier(.07, .95, 0, 1);
+}
+
+.Notice-error .Notice-button .Icon {
+  height: 13px;
+  width: 13px;
+}
+
+[dir=ltr] .Notice-error .Notice-button .Icon {
+  margin-right: 6px;
+}
+
+[dir=rtl] .Notice-error .Notice-button .Icon {
+  margin-left: 6px;
+}
+
+.Notice-error .Notice-button, .Notice-error .Notice-button:link {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.Notice-error .Notice-button.Button--puffy, .Notice-error .Notice-button:link.Button--puffy {
+  border-radius: 4px;
+  font-size: 15px;
+  height: 48px;
+  padding: 0 16px;
+}
+
+.Notice-error .Notice-button.Button--puffy .Icon, .Notice-error .Notice-button:link.Button--puffy .Icon {
+  height: 15px;
+  width: 15px;
+}
+
+[dir=ltr] .Notice-error .Notice-button.Button--puffy .Icon, [dir=ltr] .Notice-error .Notice-button:link.Button--puffy .Icon {
+  margin-right: 8px;
+}
+
+[dir=rtl] .Notice-error .Notice-button.Button--puffy .Icon, [dir=rtl] .Notice-error .Notice-button:link.Button--puffy .Icon {
+  margin-left: 8px;
+}
+
+.Notice-error .Notice-button.Button--micro, .Notice-error .Notice-button:link.Button--micro {
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, .5);
+}
+
+.Notice-error .Notice-button.Button--micro, .Notice-error .Notice-button.Button--micro:link, .Notice-error .Notice-button:link.Button--micro, .Notice-error .Notice-button:link.Button--micro:link {
+  font-size: 11px;
+  height: 24px;
+}
+
+.Notice-error .Notice-button.Button--micro .Icon, .Notice-error .Notice-button:link.Button--micro .Icon {
+  height: 11px;
+  width: 11px;
+}
+
+[dir=ltr] .Notice-error .Notice-button.Button--micro .Icon, [dir=ltr] .Notice-error .Notice-button:link.Button--micro .Icon {
+  margin-right: 4px;
+}
+
+[dir=rtl] .Notice-error .Notice-button.Button--micro .Icon, [dir=rtl] .Notice-error .Notice-button:link.Button--micro .Icon {
+  margin-left: 4px;
+}
+
+.Notice-error .Notice-button.Button--micro:active:not(.Button--disabled), .Notice-error .Notice-button:link.Button--micro:active:not(.Button--disabled) {
+  padding-top: 1px;
+}
+
+.Notice-error .Notice-button:not(.Button--disabled):hover, .Notice-error .Notice-button.Button--micro:not(.Button--disabled):hover {
+  background: #a4000f;
+}
+
+.Notice-error .Notice-button:not(.Button--disabled):active:not(.Button--disabled), .Notice-error .Notice-button.Button--micro:not(.Button--disabled):active:not(.Button--disabled) {
+  background: #5a0002;
+  padding-top: 1px;
+}
+
+.Notice-error .Notice-button:focus {
+  -webkit-box-shadow: inset 0 0 2px 0 #0a84ff, 0 0 3px 0 rgba(10, 132, 255, .7);
+  box-shadow: inset 0 0 2px 0 #0a84ff, 0 0 3px 0 rgba(10, 132, 255, .7);
+  outline: none;
+}
+
+.Notice-error .Notice-button.Button--disabled {
+  cursor: not-allowed;
+  opacity: .4;
+}
+
+.Notice-error .Notice-button::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+.Notice-error .Notice-button, .Notice-error .Notice-button.Button--micro {
+  border: none;
+  font-size: 12px;
+  line-height: 1.1;
+  padding: 6px;
+  text-shadow: none;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.Notice-error .Notice-icon {
+  background-image: url("data:image/svg+xml,%3Csvg width='14px' height='14px' viewBox='0 0 14 14' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E %3C!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch --%3E %3Cdesc%3ECreated with Sketch.%3C/desc%3E %3Cdefs%3E%3C/defs%3E %3Cg id='Page-1' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E %3Cg id='identity-icon-hover' fill='%23FFFFFF'%3E %3Cpath d='M7,0 C10.8659932,-2.22044605e-16 14,3.13400675 14,7 C14,10.8659932 10.8659932,14 7,14 C3.13400675,14 0,10.8659932 -4.4408921e-16,7 C0,3.13400675 3.13400675,2.44249065e-15 7,0 Z M7,3 C7.55228475,3 8,3.44771525 8,4 C8,4.55228475 7.55228475,5 7,5 C6.44771525,5 6,4.55228475 6,4 C6,3.44771525 6.44771525,3 7,3 Z M7,6 C7.55228475,6 8,6.44771525 8,7 L8,10 C8,10.5522847 7.55228475,11 7,11 C6.44771525,11 6,10.5522847 6,10 L6,7 C6,6.44771525 6.44771525,6 7,6 Z' id='Shape'%3E%3C/path%3E %3C/g%3E %3C/g%3E %3C/svg%3E");
+}
+
+.Notice-error,
+.Notice-error :link,
+.Notice-error :hover,
+.Notice-error :active {
+  color: #ffffff;
+}
+
+.Notice-success {
+  background-color: #30e60b;
+}
+
+.Notice-success .Notice-button {
+  align-items: center;
+  background: #12bc00;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  -webkit-box-align: center;
+  -webkit-box-pack: center;
+  cursor: pointer;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-align: center;
+  -ms-flex-pack: center;
+  font-family: "Fira Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  height: 32px;
+  justify-content: center;
+  line-height: 1.3;
+  margin: 0;
+  padding: 0 8px;
+  text-decoration: none;
+  -webkit-transition-duration: all 1050ms, padding 150ms;
+  transition-duration: all 1050ms, padding 150ms;
+  -webkit-transition-property: background-color border-color color;
+  transition-property: background-color border-color color;
+  -webkit-transition-timing-function: cubic-bezier(.07, .95, 0, 1);
+  transition-timing-function: cubic-bezier(.07, .95, 0, 1);
+}
+
+.Notice-success .Notice-button .Icon {
+  height: 13px;
+  width: 13px;
+}
+
+[dir=ltr] .Notice-success .Notice-button .Icon {
+  margin-right: 6px;
+}
+
+[dir=rtl] .Notice-success .Notice-button .Icon {
+  margin-left: 6px;
+}
+
+.Notice-success .Notice-button, .Notice-success .Notice-button:link {
+  color: #003706;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.Notice-success .Notice-button.Button--puffy, .Notice-success .Notice-button:link.Button--puffy {
+  border-radius: 4px;
+  font-size: 15px;
+  height: 48px;
+  padding: 0 16px;
+}
+
+.Notice-success .Notice-button.Button--puffy .Icon, .Notice-success .Notice-button:link.Button--puffy .Icon {
+  height: 15px;
+  width: 15px;
+}
+
+[dir=ltr] .Notice-success .Notice-button.Button--puffy .Icon, [dir=ltr] .Notice-success .Notice-button:link.Button--puffy .Icon {
+  margin-right: 8px;
+}
+
+[dir=rtl] .Notice-success .Notice-button.Button--puffy .Icon, [dir=rtl] .Notice-success .Notice-button:link.Button--puffy .Icon {
+  margin-left: 8px;
+}
+
+.Notice-success .Notice-button.Button--micro, .Notice-success .Notice-button:link.Button--micro {
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, .5);
+}
+
+.Notice-success .Notice-button.Button--micro, .Notice-success .Notice-button.Button--micro:link, .Notice-success .Notice-button:link.Button--micro, .Notice-success .Notice-button:link.Button--micro:link {
+  font-size: 11px;
+  height: 24px;
+}
+
+.Notice-success .Notice-button.Button--micro .Icon, .Notice-success .Notice-button:link.Button--micro .Icon {
+  height: 11px;
+  width: 11px;
+}
+
+[dir=ltr] .Notice-success .Notice-button.Button--micro .Icon, [dir=ltr] .Notice-success .Notice-button:link.Button--micro .Icon {
+  margin-right: 4px;
+}
+
+[dir=rtl] .Notice-success .Notice-button.Button--micro .Icon, [dir=rtl] .Notice-success .Notice-button:link.Button--micro .Icon {
+  margin-left: 4px;
+}
+
+.Notice-success .Notice-button.Button--micro:active:not(.Button--disabled), .Notice-success .Notice-button:link.Button--micro:active:not(.Button--disabled) {
+  padding-top: 1px;
+}
+
+.Notice-success .Notice-button:not(.Button--disabled):hover, .Notice-success .Notice-button.Button--micro:not(.Button--disabled):hover {
+  background: #058b00;
+}
+
+.Notice-success .Notice-button:not(.Button--disabled):active:not(.Button--disabled), .Notice-success .Notice-button.Button--micro:not(.Button--disabled):active:not(.Button--disabled) {
+  background: #006504;
+  padding-top: 1px;
+}
+
+.Notice-success .Notice-button:focus {
+  -webkit-box-shadow: inset 0 0 2px 0 #0a84ff, 0 0 3px 0 rgba(10, 132, 255, .7);
+  box-shadow: inset 0 0 2px 0 #0a84ff, 0 0 3px 0 rgba(10, 132, 255, .7);
+  outline: none;
+}
+
+.Notice-success .Notice-button.Button--disabled {
+  cursor: not-allowed;
+  opacity: .4;
+}
+
+.Notice-success .Notice-button::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+.Notice-success .Notice-button:active, .Notice-success .Notice-button:hover, .Notice-success .Notice-button:focus {
+  color: #ffffff;
+}
+
+.Notice-success .Notice-button, .Notice-success .Notice-button.Button--micro {
+  border: none;
+  font-size: 12px;
+  line-height: 1.1;
+  padding: 6px;
+  text-shadow: none;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.Notice-success .Notice-icon {
+  background-image: url("data:image/svg+xml,%3Csvg width='12px' height='12px' viewBox='0 0 12 12' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E %3C!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch --%3E %3Cdesc%3ECreated with Sketch.%3C/desc%3E %3Cdefs%3E%3C/defs%3E %3Cg id='Page-1' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E %3Cg id='check-16' fill='%23003706' fill-rule='nonzero'%3E %3Cpath d='M4,12 C3.73480519,11.9999434 3.48049273,11.8945494 3.293,11.707 L0.293,8.707 C-0.0859722095,8.31462111 -0.0805523739,7.69091522 0.305181425,7.30518142 C0.690915223,6.91944763 1.31462111,6.91402779 1.707,7.293 L3.864,9.45 L10.18,0.427 C10.4986123,-0.0195570389 11.1174952,-0.126073837 11.5670672,0.188269953 C12.0166392,0.502613743 12.1290468,1.12045391 11.819,1.573 L4.819,11.573 C4.65035194,11.8167957 4.38222928,11.9732006 4.087,12 C4.05801844,12.0014627 4.02898156,12.0014627 4,12 Z' id='Shape'%3E%3C/path%3E %3C/g%3E %3C/g%3E %3C/svg%3E");
+}
+
+.Notice-success,
+.Notice-success :link,
+.Notice-success :hover,
+.Notice-success :active {
+  color: #003706;
+}

@@ -1,0 +1,103 @@
+
+/* Firefox Colors SCSS Variables v1.3.0 */
+
+/* Font mixins. Changes here affect *all* apps */
+
+/* Shared mixins. Bear in mind changes here impact *all* apps. */
+
+/* Firefox Colors SCSS Variables v1.3.0 */
+.SectionLinks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0 0 4px;
+}
+
+.SectionLinks-item {
+  display: inline-block;
+}
+
+.SectionLinks-link,
+.SectionLinks-link:link {
+  color: #b1b1b3;
+  display: inline-block;
+  font-weight: 400;
+  margin: 0 12px;
+  padding: 0 0 2px;
+  text-decoration: none;
+}
+
+.SectionLinks-link::after,
+.SectionLinks-link:link::after {
+  background: transparent;
+  content: "";
+  display: block;
+  height: 3px;
+  margin: auto;
+  -webkit-transition: width 150ms ease, background-color 150ms ease;
+  transition: width 150ms ease, background-color 150ms ease;
+  width: 0;
+}
+
+.SectionLinks-link:focus::after, .SectionLinks-link:hover::after,
+.SectionLinks-link:link:focus::after,
+.SectionLinks-link:link:hover::after {
+  background: #b1b1b3;
+  width: 100%;
+}
+
+.SectionLinks-link:active::after,
+.SectionLinks-link:link:active::after {
+  background-color: #ffffff;
+}
+
+.SectionLinks-link--active,
+.SectionLinks-link--active:link {
+  color: #ffffff;
+}
+
+.SectionLinks-link--active::after, .SectionLinks-link--active:active::after, .SectionLinks-link--active:focus::after, .SectionLinks-link--active:hover::after,
+.SectionLinks-link--active:link::after,
+.SectionLinks-link--active:link:active::after,
+.SectionLinks-link--active:link:focus::after,
+.SectionLinks-link--active:link:hover::after {
+  background-color: #ffffff;
+  width: 100%;
+}
+
+.SectionLinks-explore,
+.SectionLinks-explore:link {
+  display: none;
+}
+
+@media (min-width: 720px) {
+  .SectionLinks-explore,
+  .SectionLinks-explore:link {
+    display: inline-block;
+  }
+}
+
+.SectionLinks-dropdown {
+  padding: 0;
+  white-space: nowrap;
+}
+
+.SectionLinks-dropdown::after, .SectionLinks-dropdown:active::after, .SectionLinks-dropdown:focus::after, .SectionLinks-dropdown:hover::after {
+  width: 0;
+}
+
+.SectionLinks-dropdown .DropdownMenu-button {
+  margin-top: 2px;
+  padding: 0 0 2px;
+}
+
+.SectionLinks-dropdown .DropdownMenu-button-text {
+  color: #b1b1b3;
+  font-size: 14px;
+}
+
+.SectionLinks-dropdown .DropdownMenu-items {
+  top: 22px;
+}
